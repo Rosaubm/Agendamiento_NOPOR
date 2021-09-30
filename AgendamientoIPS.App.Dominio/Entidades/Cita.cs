@@ -2,7 +2,7 @@ using System;
 
 namespace AgendamientoIPS.App.Dominio
 {
-    public class Citas : Sedes
+    public class Cita : Sede
     {
         public Boolean Presencial {get;set;} // Cita Presencial si o no 
         public Boolean Virtual {get;set;} // Cita Virtual si o no 

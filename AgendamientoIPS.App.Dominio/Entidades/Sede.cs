@@ -2,7 +2,7 @@ using System;
 
 namespace AgendamientoIPS.App.Dominio
 {
-    public class Sedes : IPSSaludIntegral
+    public class Sede : IPSSaludIntegral
     {
         public int IDSede {get;set;} // ID de Sede 
         public string CiudadSede {get;set;} // Ciudad de Sede
