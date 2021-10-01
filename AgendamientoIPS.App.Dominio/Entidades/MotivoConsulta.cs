@@ -6,9 +6,9 @@ namespace AgendamientoIPS.App.Dominio
     public enum MotivoConsulta
     {
         Revisión,
-        Lectura de Exámenes,
-        Control de Tratamiento,
-        Ordenar Medicina,
+        LecturaExámenes,
+        ControlTratamiento,
+        OrdenarMedicina,
         Consulta
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using AgendamientoIPS.App.Dominio;
 
 namespace AgendamientoIPS.App.Consola
 {

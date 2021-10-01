@@ -1,0 +1,9 @@
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Dominio\obj\Debug\netstandard2.0\AgendamientoIPS.App.Dominio.csprojAssemblyReference.cache
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Dominio\obj\Debug\netstandard2.0\AgendamientoIPS.App.Dominio.AssemblyInfoInputs.cache
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Dominio\obj\Debug\netstandard2.0\AgendamientoIPS.App.Dominio.AssemblyInfo.cs
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Dominio\obj\Debug\netstandard2.0\AgendamientoIPS.App.Dominio.csproj.CoreCompileInputs.cache
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Dominio\bin\Debug\netstandard2.0\AgendamientoIPS.App.Dominio.deps.json
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Dominio\bin\Debug\netstandard2.0\AgendamientoIPS.App.Dominio.dll
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Dominio\bin\Debug\netstandard2.0\AgendamientoIPS.App.Dominio.pdb
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Dominio\obj\Debug\netstandard2.0\AgendamientoIPS.App.Dominio.dll
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Dominio\obj\Debug\netstandard2.0\AgendamientoIPS.App.Dominio.pdb
