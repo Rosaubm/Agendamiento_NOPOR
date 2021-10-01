@@ -2,12 +2,16 @@ using System;
 
 namespace AgendamientoIPS.App.Dominio
 {
-    public class Cita : Sede
+    public class Cita
     {
-        public Boolean Presencial {get;set;} // Cita Presencial si o no 
-        public Boolean Virtual {get;set;} // Cita Virtual si o no 
-        public DateTime HorarioCita {get;set;} // Horario de Cita
-        public Boolean Programación {get;set;} // Cita Programada si o no 
-        public Boolean Cancelacion {get;set;} // Cita Cancelada si o no 
+        public int Id {get;set;} // Identificación de clase Cita
+        public TipoCita TipoCita {get;set;} // Cita Presencial o Virtual
+        public int NumCita {get;set;} // Número de Cita a nivel sistema
+        public string Especialidad {get;set;} // Especialidad de la cita pedida por el paciente
+        public DateTime Hora {get;set;} // Hora de la Cita
+        public DateTime Fecha {get;set;} // Fecha de la Cita
+        public Medico IdMedico {get;set;} // Id del médico asignado
+        public Paciente IdPaciente {get;set;} // Id del paciente
+        public Sede Ubicacion {get;set;} // Ubicación de la Cita
     }
 } 

@@ -4,7 +4,6 @@ namespace AgendamientoIPS.App.Dominio
 {
     public class Paciente : Persona
     {
-        public int EPS {get;set;} // EPS del Paciente
-        public Genero Genero {get;set;} // Género del Paciente 
+        public Encuesta Encuesta {get;set;} // Encuesta realizada por el Paciente 
     }
 }
