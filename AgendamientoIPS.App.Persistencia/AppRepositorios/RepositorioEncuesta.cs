@@ -22,7 +22,7 @@ namespace AgendamientoIPS.App.Persistencia
 
         void IRepositorioEncuesta.DeleteEncuesta(int idEncuesta)
         {
-            var encuestaEncontrado = _appContext.Encuestas.FirstOrDefault(p => p.Id == idEncuesta);
+            var encuestaEncontrado = _appContext.Encuestas.FirstOrDefault(e => e.Id == idEncuesta);
             if (encuestaEncontrado == null)
                 return;
             _appContext.Encuestas.Remove(encuestaEncontrado);
@@ -36,12 +36,12 @@ namespace AgendamientoIPS.App.Persistencia
 
         Encuesta IRepositorioEncuesta.GetEncuesta(int idEncuesta)
         {
-            return _appContext.Encuestas.FirstOrDefault(p => p.Id == idEncuesta);
+            return _appContext.Encuestas.FirstOrDefault(e => e.Id == idEncuesta);
         }
 
         Encuesta IRepositorioEncuesta.UpdateEncuesta(Encuesta encuesta)
         {
-            var encuestaEncontrado = _appContext.Encuestas.FirstOrDefault(p => p.Id == encuesta.Id);
+            var encuestaEncontrado = _appContext.Encuestas.FirstOrDefault(e => e.Id == encuesta.Id);
             if (encuestaEncontrado != null)
             {
                 encuestaEncontrado.AntecedentesMedicos = encuesta.AntecedentesMedicos;

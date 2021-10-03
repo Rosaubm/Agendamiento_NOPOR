@@ -22,7 +22,7 @@ namespace AgendamientoIPS.App.Persistencia
 
         void IRepositorioMedico.DeleteMedico(int idMedico)
         {
-            var medicoEncontrado = _appContext.Medicos.FirstOrDefault(p => p.Id == idMedico);
+            var medicoEncontrado = _appContext.Medicos.FirstOrDefault(m => m.Id == idMedico);
             if (medicoEncontrado == null)
                 return;
             _appContext.Medicos.Remove(medicoEncontrado);
@@ -36,12 +36,12 @@ namespace AgendamientoIPS.App.Persistencia
 
         Medico IRepositorioMedico.GetMedico(int idMedico)
         {
-            return _appContext.Medicos.FirstOrDefault(p => p.Id == idMedico);
+            return _appContext.Medicos.FirstOrDefault(m => m.Id == idMedico);
         }
 
         Medico IRepositorioMedico.UpdateMedico(Medico medico)
         {
-            var medicoEncontrado = _appContext.Medicos.FirstOrDefault(p => p.Id == medico.Id);
+            var medicoEncontrado = _appContext.Medicos.FirstOrDefault(m => m.Id == medico.Id);
             if (medicoEncontrado != null)
             {
                 medicoEncontrado.TarjetaProfesional = medico.TarjetaProfesional;

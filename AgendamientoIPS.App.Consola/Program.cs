@@ -10,6 +10,7 @@ namespace AgendamientoIPS.App.Consola
         private static IRepositorioPaciente _repoPaciente = new RepositorioPaciente(new Persistencia.AppContext());
         private static IRepositorioMedico _repoMedico = new RepositorioMedico(new Persistencia.AppContext());
         private static IRepositorioEncuesta _repoEncuesta = new RepositorioEncuesta(new Persistencia.AppContext());
+        private static IRepositorioCita _repoCita = new RepositorioCita(new Persistencia.AppContext());
 
         static void Main(string[] args)
         {
@@ -17,11 +18,14 @@ namespace AgendamientoIPS.App.Consola
             //AddPaciente();
             //AddMedico();
             //AddEncuesta();
+            AddCita();
             BuscarPaciente(2);
             MostrarPacientes();
             BuscarMedico(3);
             MostrarMedicos();
-            AsignarEncuesta();
+            //AsignarEncuesta();
+            //AsignarCitaPaciente();            
+            //AsignarCitaMedico();            
         }
 
         private static void AddPaciente()
@@ -99,9 +103,25 @@ namespace AgendamientoIPS.App.Consola
 
         private static void AsignarEncuesta()
         {
-            var encuesta = _repoPaciente.AsignarEncuesta(1,1);
+            var encuesta = _repoPaciente.AsignarEncuesta(1, 1);
             var paciente = _repoPaciente.GetPaciente(1);
             Console.WriteLine("Nombre paciente: " + paciente.Nombre + " " + paciente.PrimerApellido + " quedó asignado a la encuesta: " + encuesta.Id);
-        }        
+        }
+
+        private static void AddCita()
+        {
+            var cita = new Cita
+            {
+                TipoCita = TipoCita.Virtual,
+                NumCita = 1,
+                Especialidad = "Dolor y cuidados paliativos",
+                Hora = new TimeSpan(17,15,10),
+                Fecha = new DateTime(2021,12,21),
+                IdMedico = null,
+                IdPaciente = null,
+                Ubicacion = 11                
+            };
+            _repoCita.AddCita(cita);
+        }
     }
 }
