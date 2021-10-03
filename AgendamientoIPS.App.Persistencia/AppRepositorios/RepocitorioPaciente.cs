@@ -32,7 +32,6 @@ namespace AgendamientoIPS.App.Persistencia
         IEnumerable<Paciente> IRepositorioPaciente.GetAllPacientes()
         {
             return _appContext.Pacientes;
-
         }
 
         Paciente IRepositorioPaciente.GetPaciente(int idPaciente)

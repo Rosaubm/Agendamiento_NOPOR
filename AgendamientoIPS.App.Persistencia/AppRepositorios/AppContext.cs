@@ -7,7 +7,7 @@ namespace AgendamientoIPS.App.Persistencia
    {
        public DbSet<Persona> Personas {get;set;}
        public DbSet<Paciente> Pacientes {get;set;}
-       public DbSet<Medico> Medico {get;set;}
+       public DbSet<Medico> Medicos {get;set;}
        public DbSet<Encuesta> Encuestas {get;set;}
        public DbSet<Cita> Citas {get;set;}
        public DbSet<Sede> Sedes {get;set;}
