@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = AgendamientoIPS.App.Dominio
-build_property.ProjectDir = /home/p4t0/Documents/MisiónTIC2022/AgendamientoIPS/AgendamientoIPS.App/AgendamientoIPS.App.Dominio/
+build_property.ProjectDir = /home/p4t0/Documents/MisiónTIC2022/AgendamientoIPS/Agendamiento_NOPOR/AgendamientoIPS.App.Dominio/

@@ -6,6 +6,6 @@ namespace AgendamientoIPS.App.Dominio
     public enum TipoCita
     {
         Presencial,
-        Virutal
+        Virtual
     }
 }
