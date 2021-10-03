@@ -26,6 +26,9 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+              "/home/p4t0/Documents/MisiónTIC2022/AgendamientoIPS/Agendamiento_NOPOR/AgendamientoIPS.App.Dominio/AgendamientoIPS.App.Dominio.csproj": {
+                "projectPath": "/home/p4t0/Documents/MisiónTIC2022/AgendamientoIPS/Agendamiento_NOPOR/AgendamientoIPS.App.Dominio/AgendamientoIPS.App.Dominio.csproj"
+              },
               "/home/p4t0/Documents/MisiónTIC2022/AgendamientoIPS/Agendamiento_NOPOR/AgendamientoIPS.App.Persistencia/AgendamientoIPS.App.Persistencia.csproj": {
                 "projectPath": "/home/p4t0/Documents/MisiónTIC2022/AgendamientoIPS/Agendamiento_NOPOR/AgendamientoIPS.App.Persistencia/AgendamientoIPS.App.Persistencia.csproj"
               }
