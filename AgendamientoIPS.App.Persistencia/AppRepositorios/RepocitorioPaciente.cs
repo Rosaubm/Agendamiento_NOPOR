@@ -56,5 +56,21 @@ namespace AgendamientoIPS.App.Persistencia
             }
             return pacienteEncontrado;
         }
+
+        Encuesta IRepositorioPaciente.AsignarEncuesta(int idPaciente, int idEncuesta)
+        { 
+            var pacienteEncontrado = _appContext.Pacientes.FirstOrDefault(p => p.Id == idPaciente);
+            if (pacienteEncontrado != null)
+            { 
+                var encuestaEncontrado = _appContext.Encuestas.FirstOrDefault(m => m.Id == idEncuesta);
+                if (encuestaEncontrado != null)
+                { 
+                    pacienteEncontrado.Encuesta = encuestaEncontrado;
+                    _appContext.SaveChanges();
+                }
+            return encuestaEncontrado;
+            }
+        return null;
+        }
     }
 }

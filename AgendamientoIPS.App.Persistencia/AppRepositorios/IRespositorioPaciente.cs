@@ -10,5 +10,6 @@ namespace AgendamientoIPS.App.Persistencia
         Paciente UpdatePaciente(Paciente paciente);
         void DeletePaciente(int idPaciente);
         Paciente GetPaciente(int idPaciente);
+        Encuesta AsignarEncuesta(int idPaciente, int idEncuesta);        
     }
 }
