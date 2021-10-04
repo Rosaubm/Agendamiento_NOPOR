@@ -51,7 +51,7 @@ namespace AgendamientoIPS.App.Persistencia
                 citaEncontrado.Fecha = cita.Fecha;
                 citaEncontrado.IdMedico = cita.IdMedico;
                 citaEncontrado.IdPaciente = cita.IdPaciente;
-                citaEncontrado.Ubicacion = cita.Ubicacion;
+                citaEncontrado.IdSede = cita.IdSede;
                 
                 _appContext.SaveChanges();
             }
@@ -86,6 +86,22 @@ namespace AgendamientoIPS.App.Persistencia
                     _appContext.SaveChanges();
                 }
             return medicoEncontrado;
+            }
+        return null;
+        }
+
+        Sede IRepositorioCita.AsignarCitaSede(int idCita, int idSede)
+        { 
+            var citaEncontrado = _appContext.Citas.FirstOrDefault(c => c.Id == idCita);
+            if (citaEncontrado != null)
+            { 
+                var sedeEncontrado = _appContext.Sedes.FirstOrDefault(s => s.Id == idSede);
+                if (sedeEncontrado != null)
+                { 
+                    citaEncontrado.IdSede = sedeEncontrado;
+                    _appContext.SaveChanges();
+                }
+            return sedeEncontrado;
             }
         return null;
         }

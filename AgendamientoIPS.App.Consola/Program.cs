@@ -11,6 +11,7 @@ namespace AgendamientoIPS.App.Consola
         private static IRepositorioMedico _repoMedico = new RepositorioMedico(new Persistencia.AppContext());
         private static IRepositorioEncuesta _repoEncuesta = new RepositorioEncuesta(new Persistencia.AppContext());
         private static IRepositorioCita _repoCita = new RepositorioCita(new Persistencia.AppContext());
+        private static IRepositorioSede _repoSede = new RepositorioSede(new Persistencia.AppContext());
 
         static void Main(string[] args)
         {
@@ -19,13 +20,15 @@ namespace AgendamientoIPS.App.Consola
             //AddMedico();
             //AddEncuesta();
             //AddCita();
+            //AddSede();
             BuscarPaciente(2);
             MostrarPacientes();
             BuscarMedico(3);
             MostrarMedicos();
             //AsignarEncuesta();
-            AsignarCitaPaciente();            
-            AsignarCitaMedico();            
+            //AsignarCitaPaciente();            
+            //AsignarCitaMedico();
+            AsignarCitaSede();
         }
 
         private static void AddPaciente()
@@ -103,7 +106,7 @@ namespace AgendamientoIPS.App.Consola
 
         private static void AsignarEncuesta()
         {
-            var encuesta = _repoPaciente.AsignarEncuesta(1, 1);
+            var encuesta = _repoPaciente.AsignarEncuesta(1,1);
             var paciente = _repoPaciente.GetPaciente(1);
             Console.WriteLine("Nombre paciente: " + paciente.Nombre + " " + paciente.PrimerApellido + " quedó asignado a la encuesta: " + encuesta.Id);
         }
@@ -119,14 +122,29 @@ namespace AgendamientoIPS.App.Consola
                 Fecha = new DateTime(2021,12,21),
                 IdMedico = null,
                 IdPaciente = null,
-                Ubicacion = 11                
+                IdSede = null
             };
             _repoCita.AddCita(cita);
         }
 
+        private static void AddSede()
+        {
+            var sede = new Sede
+            {
+                Nit = "111111111-1",
+                Ciudad = Ciudad.Medellín,
+                Direccion = "Carrera 1, Calle 1 #1-1",
+                Telefono = "(111) 111-1111",
+                NombreSede = NombreSede.General,
+                HorarioAtencion = HorarioAtencion.EPS,
+                Ubicacion = 0,
+            };
+            _repoSede.AddSede(sede);
+        }
+
         private static void AsignarCitaPaciente()
         {
-            var citapaciente = _repoCita.AsignarCitaPaciente(1, 1);
+            var citapaciente = _repoCita.AsignarCitaPaciente(1,1);
             var paciente = _repoPaciente.GetPaciente(1);
             var cita = _repoCita.GetCita(1);
             Console.WriteLine("Nombre paciente: " + paciente.Nombre + " " + paciente.PrimerApellido + " quedó asignado a la cita: " + cita.NumCita);
@@ -134,10 +152,18 @@ namespace AgendamientoIPS.App.Consola
 
         private static void AsignarCitaMedico()
         {
-            var citamedico = _repoCita.AsignarCitaMedico(1, 3);
+            var citamedico = _repoCita.AsignarCitaMedico(1,3);
             var medico = _repoMedico.GetMedico(3);
             var cita = _repoCita.GetCita(1);            
             Console.WriteLine("Nombre médico: " + medico.Nombre + " " + medico.PrimerApellido + " quedó asignado a la cita: " + cita.NumCita);
+        }
+
+        private static void AsignarCitaSede()
+        {
+            var citasede = _repoCita.AsignarCitaSede(1,1);
+            var sede = _repoSede.GetSede(1);
+            var cita = _repoCita.GetCita(1);            
+            Console.WriteLine("La cita: " + cita.NumCita + " quedó asignada a la sede: " + sede.Id);
         }
     }
 }

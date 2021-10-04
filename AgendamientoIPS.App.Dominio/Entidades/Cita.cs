@@ -12,6 +12,6 @@ namespace AgendamientoIPS.App.Dominio
         public DateTime Fecha {get;set;} // Fecha de la Cita
         public Medico IdMedico {get;set;} // Id del médico asignado
         public Paciente IdPaciente {get;set;} // Id del paciente
-        public int Ubicacion {get;set;} // Ubicación de la Cita
+        public Sede IdSede {get;set;} // Ubicación de la Cita
     }
 } 
