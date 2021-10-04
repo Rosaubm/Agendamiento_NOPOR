@@ -32,13 +32,16 @@ namespace AgendamientoIPS.App.Persistencia.Migrations
                     b.Property<DateTime>("Fecha")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("Hora")
-                        .HasColumnType("datetime2");
+                    b.Property<TimeSpan>("Hora")
+                        .HasColumnType("time");
 
                     b.Property<int?>("IdMedicoId")
                         .HasColumnType("int");
 
                     b.Property<int?>("IdPacienteId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("IdSedeId")
                         .HasColumnType("int");
 
                     b.Property<int>("NumCita")
@@ -47,16 +50,13 @@ namespace AgendamientoIPS.App.Persistencia.Migrations
                     b.Property<int>("TipoCita")
                         .HasColumnType("int");
 
-                    b.Property<int?>("UbicacionId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
 
                     b.HasIndex("IdMedicoId");
 
                     b.HasIndex("IdPacienteId");
 
-                    b.HasIndex("UbicacionId");
+                    b.HasIndex("IdSedeId");
 
                     b.ToTable("Citas");
                 });
@@ -103,7 +103,7 @@ namespace AgendamientoIPS.App.Persistencia.Migrations
                     b.ToTable("Encuestas");
                 });
 
-            modelBuilder.Entity("AgendamientoIPS.App.Dominio.Facturacion", b =>
+            modelBuilder.Entity("AgendamientoIPS.App.Dominio.Factura", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -122,6 +122,9 @@ namespace AgendamientoIPS.App.Persistencia.Migrations
                     b.Property<string>("FormadePago")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("IdConvenioId")
+                        .HasColumnType("int");
+
                     b.Property<int>("NumFactura")
                         .HasColumnType("int");
 
@@ -135,7 +138,9 @@ namespace AgendamientoIPS.App.Persistencia.Migrations
 
                     b.HasIndex("CitaId");
 
-                    b.ToTable("Facturaciones");
+                    b.HasIndex("IdConvenioId");
+
+                    b.ToTable("Facturas");
                 });
 
             modelBuilder.Entity("AgendamientoIPS.App.Dominio.Persona", b =>
@@ -202,6 +207,9 @@ namespace AgendamientoIPS.App.Persistencia.Migrations
                     b.Property<string>("Telefono")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("Ubicacion")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.ToTable("Sedes");
@@ -242,24 +250,30 @@ namespace AgendamientoIPS.App.Persistencia.Migrations
                         .WithMany()
                         .HasForeignKey("IdPacienteId");
 
-                    b.HasOne("AgendamientoIPS.App.Dominio.Sede", "Ubicacion")
+                    b.HasOne("AgendamientoIPS.App.Dominio.Sede", "IdSede")
                         .WithMany()
-                        .HasForeignKey("UbicacionId");
+                        .HasForeignKey("IdSedeId");
 
                     b.Navigation("IdMedico");
 
                     b.Navigation("IdPaciente");
 
-                    b.Navigation("Ubicacion");
+                    b.Navigation("IdSede");
                 });
 
-            modelBuilder.Entity("AgendamientoIPS.App.Dominio.Facturacion", b =>
+            modelBuilder.Entity("AgendamientoIPS.App.Dominio.Factura", b =>
                 {
                     b.HasOne("AgendamientoIPS.App.Dominio.Cita", "Cita")
                         .WithMany()
                         .HasForeignKey("CitaId");
 
+                    b.HasOne("AgendamientoIPS.App.Dominio.Convenio", "IdConvenio")
+                        .WithMany()
+                        .HasForeignKey("IdConvenioId");
+
                     b.Navigation("Cita");
+
+                    b.Navigation("IdConvenio");
                 });
 
             modelBuilder.Entity("AgendamientoIPS.App.Dominio.Paciente", b =>

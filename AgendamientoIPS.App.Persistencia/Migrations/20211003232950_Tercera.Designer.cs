@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AgendamientoIPS.App.Persistencia.Migrations
 {
     [DbContext(typeof(AppContext))]
-    [Migration("20210930235446_Inicial")]
-    partial class Inicial
+    [Migration("20211003232950_Tercera")]
+    partial class Tercera
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -34,8 +34,8 @@ namespace AgendamientoIPS.App.Persistencia.Migrations
                     b.Property<DateTime>("Fecha")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("Hora")
-                        .HasColumnType("datetime2");
+                    b.Property<TimeSpan>("Hora")
+                        .HasColumnType("time");
 
                     b.Property<int?>("IdMedicoId")
                         .HasColumnType("int");
@@ -49,7 +49,7 @@ namespace AgendamientoIPS.App.Persistencia.Migrations
                     b.Property<int>("TipoCita")
                         .HasColumnType("int");
 
-                    b.Property<int?>("UbicacionId")
+                    b.Property<int>("Ubicacion")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -57,8 +57,6 @@ namespace AgendamientoIPS.App.Persistencia.Migrations
                     b.HasIndex("IdMedicoId");
 
                     b.HasIndex("IdPacienteId");
-
-                    b.HasIndex("UbicacionId");
 
                     b.ToTable("Citas");
                 });
@@ -244,15 +242,9 @@ namespace AgendamientoIPS.App.Persistencia.Migrations
                         .WithMany()
                         .HasForeignKey("IdPacienteId");
 
-                    b.HasOne("AgendamientoIPS.App.Dominio.Sede", "Ubicacion")
-                        .WithMany()
-                        .HasForeignKey("UbicacionId");
-
                     b.Navigation("IdMedico");
 
                     b.Navigation("IdPaciente");
-
-                    b.Navigation("Ubicacion");
                 });
 
             modelBuilder.Entity("AgendamientoIPS.App.Dominio.Facturacion", b =>

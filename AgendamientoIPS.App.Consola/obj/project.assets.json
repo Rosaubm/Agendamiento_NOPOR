@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {
+    "net5.0": {
       "Humanizer.Core/2.8.26": {
         "type": "package",
         "compile": {
@@ -214,10 +214,10 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
         },
         "compile": {
-          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll": {}
+          "lib/net5.0/Microsoft.Extensions.DependencyInjection.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll": {}
+          "lib/net5.0/Microsoft.Extensions.DependencyInjection.dll": {}
         }
       },
       "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
@@ -235,8 +235,7 @@
           "Microsoft.Extensions.DependencyInjection": "5.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "5.0.0",
-          "Microsoft.Extensions.Options": "5.0.0",
-          "System.Diagnostics.DiagnosticSource": "5.0.0"
+          "Microsoft.Extensions.Options": "5.0.0"
         },
         "compile": {
           "lib/netstandard2.1/Microsoft.Extensions.Logging.dll": {}
@@ -261,10 +260,10 @@
           "Microsoft.Extensions.Primitives": "5.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Options.dll": {}
+          "lib/net5.0/Microsoft.Extensions.Options.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Options.dll": {}
+          "lib/net5.0/Microsoft.Extensions.Options.dll": {}
         }
       },
       "Microsoft.Extensions.Primitives/5.0.0": {
@@ -632,10 +631,10 @@
       "System.Diagnostics.DiagnosticSource/5.0.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {}
+          "lib/net5.0/System.Diagnostics.DiagnosticSource.dll": {}
         },
         "runtime": {
-          "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {}
+          "lib/net5.0/System.Diagnostics.DiagnosticSource.dll": {}
         }
       },
       "System.Diagnostics.Tools/4.3.0": {
@@ -1511,7 +1510,7 @@
       },
       "AgendamientoIPS.App.Dominio/1.0.0": {
         "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
+        "framework": ".NETCoreApp,Version=v5.0",
         "compile": {
           "bin/placeholder/AgendamientoIPS.App.Dominio.dll": {}
         },
@@ -1521,7 +1520,7 @@
       },
       "AgendamientoIPS.App.Persistencia/1.0.0": {
         "type": "project",
-        "framework": ".NETStandard,Version=v2.1",
+        "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "AgendamientoIPS.App.Dominio": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.0",
@@ -5790,37 +5789,42 @@
     }
   },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": [
+    "net5.0": [
+      "AgendamientoIPS.App.Dominio >= 1.0.0",
       "AgendamientoIPS.App.Persistencia >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
+    "/home/p4t0/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\USUARIO\\Desktop\\agendamiento\\Agendamiento_NOPOR\\AgendamientoIPS.App.Consola\\AgendamientoIPS.App.Consola.csproj",
+      "projectUniqueName": "/home/p4t0/Documents/MisiónTIC2022/AgendamientoIPS/Agendamiento_NOPOR/AgendamientoIPS.App.Consola/AgendamientoIPS.App.Consola.csproj",
       "projectName": "AgendamientoIPS.App.Consola",
-      "projectPath": "D:\\USUARIO\\Desktop\\agendamiento\\Agendamiento_NOPOR\\AgendamientoIPS.App.Consola\\AgendamientoIPS.App.Consola.csproj",
-      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "D:\\USUARIO\\Desktop\\agendamiento\\Agendamiento_NOPOR\\AgendamientoIPS.App.Consola\\obj\\",
+      "projectPath": "/home/p4t0/Documents/MisiónTIC2022/AgendamientoIPS/Agendamiento_NOPOR/AgendamientoIPS.App.Consola/AgendamientoIPS.App.Consola.csproj",
+      "packagesPath": "/home/p4t0/.nuget/packages/",
+      "outputPath": "/home/p4t0/Documents/MisiónTIC2022/AgendamientoIPS/Agendamiento_NOPOR/AgendamientoIPS.App.Consola/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/p4t0/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "netcoreapp3.1"
+        "net5.0"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "netcoreapp3.1": {
+        "net5.0": {
+          "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\USUARIO\\Desktop\\agendamiento\\Agendamiento_NOPOR\\AgendamientoIPS.App.Persistencia\\AgendamientoIPS.App.Persistencia.csproj": {
-              "projectPath": "D:\\USUARIO\\Desktop\\agendamiento\\Agendamiento_NOPOR\\AgendamientoIPS.App.Persistencia\\AgendamientoIPS.App.Persistencia.csproj"
+            "/home/p4t0/Documents/MisiónTIC2022/AgendamientoIPS/Agendamiento_NOPOR/AgendamientoIPS.App.Dominio/AgendamientoIPS.App.Dominio.csproj": {
+              "projectPath": "/home/p4t0/Documents/MisiónTIC2022/AgendamientoIPS/Agendamiento_NOPOR/AgendamientoIPS.App.Dominio/AgendamientoIPS.App.Dominio.csproj"
+            },
+            "/home/p4t0/Documents/MisiónTIC2022/AgendamientoIPS/Agendamiento_NOPOR/AgendamientoIPS.App.Persistencia/AgendamientoIPS.App.Persistencia.csproj": {
+              "projectPath": "/home/p4t0/Documents/MisiónTIC2022/AgendamientoIPS/Agendamiento_NOPOR/AgendamientoIPS.App.Persistencia/AgendamientoIPS.App.Persistencia.csproj"
             }
           }
         }
@@ -5832,7 +5836,8 @@
       }
     },
     "frameworks": {
-      "netcoreapp3.1": {
+      "net5.0": {
+        "targetAlias": "net5.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -5856,7 +5861,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.413\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.401/RuntimeIdentifierGraph.json"
       }
     }
   }

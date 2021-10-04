@@ -6,7 +6,7 @@ namespace AgendamientoIPS.App.Dominio
     public enum EPS
     {
         Sanitas,
-        NuevaEps,
+        NuevaEPS,
         SaludTotal,
         CoomevaEPS,
         Ninguna

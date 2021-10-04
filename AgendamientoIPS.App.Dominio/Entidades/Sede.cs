@@ -11,5 +11,6 @@ namespace AgendamientoIPS.App.Dominio
         public string Telefono {get;set;} // Teléfono de Sede
         public NombreSede NombreSede {get;set;} // Nombre de la Sede
         public HorarioAtencion HorarioAtencion {get;set;} // Horario de Atención 
+        public int Ubicacion {get;set;} // Ubicación de Sede 
     }
 } 

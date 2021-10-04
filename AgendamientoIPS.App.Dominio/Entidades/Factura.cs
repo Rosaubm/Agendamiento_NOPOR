@@ -2,7 +2,7 @@ using System;
 
 namespace AgendamientoIPS.App.Dominio
 {
-    public class Facturacion
+    public class Factura
     {
         public int Id {get;set;} // Identificación de clase Facturación
         public Cita Cita {get;set;} // Información del paciente en Cita
@@ -12,5 +12,6 @@ namespace AgendamientoIPS.App.Dominio
         public int TarifaAplicada {get;set;} // Tarifa de Consulta
         public int ValorPagado {get;set;} // Valor pagado
         public string FormadePago {get;set;} // Forma en que fue pagado
+        public Convenio IdConvenio {get;set;} // Convenio aplicado a la factura
     }
 } 

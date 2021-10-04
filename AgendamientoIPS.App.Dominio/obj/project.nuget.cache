@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5OrNlCX1HKbXOWbdhuCAfAQKHN2ET9ymGfenJasMxx1eVYla9wq0CpajfoQaIGdQVYg5k6O2BDnJIw4Vk9mwyg==",
+  "dgSpecHash": "wMcd4fUew5NNhMenMhQwPD5xg4wENFv2hl8UF9HXBNBJSzri2MqLvrLRkMeqr6PLFBxudb9OyG8Z4MUg4twj+A==",
   "success": true,
-  "projectFilePath": "D:\\USUARIO\\Desktop\\agendamiento\\Agendamiento_NOPOR\\AgendamientoIPS.App.Dominio\\AgendamientoIPS.App.Dominio.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Usuario\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
-  ],
+  "projectFilePath": "/home/p4t0/Documents/MisiónTIC2022/AgendamientoIPS/Agendamiento_NOPOR/AgendamientoIPS.App.Dominio/AgendamientoIPS.App.Dominio.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
