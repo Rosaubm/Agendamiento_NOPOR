@@ -11,7 +11,7 @@ namespace AgendamientoIPS.App.Persistencia
        public DbSet<Encuesta> Encuestas {get;set;}
        public DbSet<Cita> Citas {get;set;}
        public DbSet<Sede> Sedes {get;set;}
-       public DbSet<Facturacion> Facturaciones {get;set;}
+       public DbSet<Factura> Facturas {get;set;}
        public DbSet<Convenio> Convenios {get;set;}
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
        {

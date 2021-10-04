@@ -4,14 +4,16 @@ using AgendamientoIPS.App.Persistencia;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace AgendamientoIPS.App.Persistencia.Migrations
 {
     [DbContext(typeof(AppContext))]
-    partial class AppContextModelSnapshot : ModelSnapshot
+    [Migration("20211004041207_Quinta")]
+    partial class Quinta
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -122,9 +124,6 @@ namespace AgendamientoIPS.App.Persistencia.Migrations
                     b.Property<string>("FormadePago")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("IdConvenioId")
-                        .HasColumnType("int");
-
                     b.Property<int>("NumFactura")
                         .HasColumnType("int");
 
@@ -137,8 +136,6 @@ namespace AgendamientoIPS.App.Persistencia.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("CitaId");
-
-                    b.HasIndex("IdConvenioId");
 
                     b.ToTable("Facturas");
                 });
@@ -267,13 +264,7 @@ namespace AgendamientoIPS.App.Persistencia.Migrations
                         .WithMany()
                         .HasForeignKey("CitaId");
 
-                    b.HasOne("AgendamientoIPS.App.Dominio.Convenio", "IdConvenio")
-                        .WithMany()
-                        .HasForeignKey("IdConvenioId");
-
                     b.Navigation("Cita");
-
-                    b.Navigation("IdConvenio");
                 });
 
             modelBuilder.Entity("AgendamientoIPS.App.Dominio.Paciente", b =>

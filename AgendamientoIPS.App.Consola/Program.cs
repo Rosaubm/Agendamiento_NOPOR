@@ -12,6 +12,8 @@ namespace AgendamientoIPS.App.Consola
         private static IRepositorioEncuesta _repoEncuesta = new RepositorioEncuesta(new Persistencia.AppContext());
         private static IRepositorioCita _repoCita = new RepositorioCita(new Persistencia.AppContext());
         private static IRepositorioSede _repoSede = new RepositorioSede(new Persistencia.AppContext());
+        private static IRepositorioConvenio _repoConvenio = new RepositorioConvenio(new Persistencia.AppContext());
+        private static IRepositorioFactura _repoFactura = new RepositorioFactura(new Persistencia.AppContext());        
 
         static void Main(string[] args)
         {
@@ -21,6 +23,8 @@ namespace AgendamientoIPS.App.Consola
             //AddEncuesta();
             //AddCita();
             //AddSede();
+            //AddConvenio();
+            //AddFactura();
             BuscarPaciente(2);
             MostrarPacientes();
             BuscarMedico(3);
@@ -28,7 +32,9 @@ namespace AgendamientoIPS.App.Consola
             //AsignarEncuesta();
             //AsignarCitaPaciente();            
             //AsignarCitaMedico();
-            AsignarCitaSede();
+            //AsignarCitaSede();
+            AsignarConvenioFactura();
+            AsignarCitaFactura();
         }
 
         private static void AddPaciente()
@@ -165,5 +171,48 @@ namespace AgendamientoIPS.App.Consola
             var cita = _repoCita.GetCita(1);            
             Console.WriteLine("La cita: " + cita.NumCita + " quedó asignada a la sede: " + sede.Id);
         }
+
+        private static void AddConvenio()
+        {
+            var convenio = new Convenio
+            {
+                NumConvenio = "A-111111",
+                EPS = EPS.Sanitas,
+                Descuento = 20
+            };
+            _repoConvenio.AddConvenio(convenio);
+        }    
+        
+        private static void AddFactura()
+        {
+            var factura = new Factura
+            {
+                Cita = null,
+                NumFactura = 1,
+                FechaFactura = new DateTime(2021,12,21),
+                Concepto = "In tincidunt congue turpis. In condimentum. Donec at arcu. Vestibulum",
+                TarifaAplicada = 91967,
+                ValorPagado = 73574,
+                FormadePago = "Tarjeta Débito",
+                IdConvenio = null
+            };
+            _repoFactura.AddFactura(factura);
+        }
+
+        private static void AsignarConvenioFactura()
+        {
+            var conveniofactura = _repoFactura.AsignarConvenioFactura(1,1);
+            var factura = _repoFactura.GetFactura(1);
+            var convenio = _repoConvenio.GetConvenio(1);            
+            Console.WriteLine("El convenio: " + convenio.Id + " quedó asignado a la factura: " + factura.Id);
+        }
+
+        private static void AsignarCitaFactura()
+        {
+            var citafactura = _repoFactura.AsignarCitaFactura(1,1);
+            var factura = _repoFactura.GetFactura(1);
+            var cita = _repoCita.GetCita(1);            
+            Console.WriteLine("La cita: " + cita.Id + " quedó asignada a la factura: " + factura.Id);
+        }    
     }
 }

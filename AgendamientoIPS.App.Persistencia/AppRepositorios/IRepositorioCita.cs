@@ -12,6 +12,6 @@ namespace AgendamientoIPS.App.Persistencia
         Cita GetCita(int idCita);
         Paciente AsignarCitaPaciente(int idCita, int idPaciente);         
         Medico AsignarCitaMedico(int idCita, int idMedico); 
-        Sede AsignarCitaSede(int idCita, int idSede);            
+        Sede AsignarCitaSede(int idCita, int idSede);                    
     }
 }
