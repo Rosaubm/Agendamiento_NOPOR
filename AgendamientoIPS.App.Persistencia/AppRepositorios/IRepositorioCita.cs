@@ -10,7 +10,7 @@ namespace AgendamientoIPS.App.Persistencia
         Cita UpdateCita(Cita cita);
         void DeleteCita(int idCita);
         Cita GetCita(int idCita);
-        Paciente AsignarPaciente(int idCita, int idPaciente);         
-        Medico AsignarMedico(int idCita, int idMedico);            
+        Paciente AsignarCitaPaciente(int idCita, int idPaciente);         
+        Medico AsignarCitaMedico(int idCita, int idMedico);            
     }
 }

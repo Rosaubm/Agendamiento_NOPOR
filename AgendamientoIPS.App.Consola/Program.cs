@@ -18,14 +18,14 @@ namespace AgendamientoIPS.App.Consola
             //AddPaciente();
             //AddMedico();
             //AddEncuesta();
-            AddCita();
+            //AddCita();
             BuscarPaciente(2);
             MostrarPacientes();
             BuscarMedico(3);
             MostrarMedicos();
             //AsignarEncuesta();
-            //AsignarCitaPaciente();            
-            //AsignarCitaMedico();            
+            AsignarCitaPaciente();            
+            AsignarCitaMedico();            
         }
 
         private static void AddPaciente()
@@ -122,6 +122,22 @@ namespace AgendamientoIPS.App.Consola
                 Ubicacion = 11                
             };
             _repoCita.AddCita(cita);
+        }
+
+        private static void AsignarCitaPaciente()
+        {
+            var citapaciente = _repoCita.AsignarCitaPaciente(1, 1);
+            var paciente = _repoPaciente.GetPaciente(1);
+            var cita = _repoCita.GetCita(1);
+            Console.WriteLine("Nombre paciente: " + paciente.Nombre + " " + paciente.PrimerApellido + " quedó asignado a la cita: " + cita.NumCita);
+        }
+
+        private static void AsignarCitaMedico()
+        {
+            var citamedico = _repoCita.AsignarCitaMedico(1, 3);
+            var medico = _repoMedico.GetMedico(3);
+            var cita = _repoCita.GetCita(1);            
+            Console.WriteLine("Nombre médico: " + medico.Nombre + " " + medico.PrimerApellido + " quedó asignado a la cita: " + cita.NumCita);
         }
     }
 }

@@ -58,7 +58,7 @@ namespace AgendamientoIPS.App.Persistencia
             return citaEncontrado;
         }
 
-        Paciente IRepositorioCita.AsignarPaciente(int idCita, int idPaciente)
+        Paciente IRepositorioCita.AsignarCitaPaciente(int idCita, int idPaciente)
         { 
             var citaEncontrado = _appContext.Citas.FirstOrDefault(c => c.Id == idCita);
             if (citaEncontrado != null)
@@ -74,7 +74,7 @@ namespace AgendamientoIPS.App.Persistencia
         return null;
         }
 
-        Medico IRepositorioCita.AsignarMedico(int idCita, int idMedico)
+        Medico IRepositorioCita.AsignarCitaMedico(int idCita, int idMedico)
         { 
             var citaEncontrado = _appContext.Citas.FirstOrDefault(c => c.Id == idCita);
             if (citaEncontrado != null)
