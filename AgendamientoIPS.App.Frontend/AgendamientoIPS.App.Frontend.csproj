@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <ItemGroup>
+    <ProjectReference Include="..\AgendamientoIPS.App.Persistencia\AgendamientoIPS.App.Persistencia.csproj" />
+    <ProjectReference Include="..\AgendamientoIPS.App.Dominio\AgendamientoIPS.App.Dominio.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+</Project>

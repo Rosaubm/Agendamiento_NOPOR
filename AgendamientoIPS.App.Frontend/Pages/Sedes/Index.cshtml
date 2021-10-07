@@ -1,0 +1,28 @@
+﻿@page
+@model AgendamientoIPS.App.Frontend.Pages.Sedes.IndexModel
+@{
+}
+<h1>Sedes</h1>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">Ciudad</th>
+            <th scope="col">NombreSede</th>
+            <th scope="col">Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var sede in Model.sedes)
+        {
+            <tr>
+                <td>@sede.Ciudad</td>
+                <td>@sede.NombreSede</td>
+                <td>
+                    <a class="btn btn-primary" asp-page="./Details" asp-route-id="@sede.Id">
+                     Detalle
+                    </a>
+                    </td>
+            </tr>
+        }
+    </tbody>
+</table>
