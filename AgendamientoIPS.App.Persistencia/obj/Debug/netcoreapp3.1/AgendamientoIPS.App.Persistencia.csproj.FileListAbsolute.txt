@@ -1,0 +1,15 @@
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Persistencia\bin\Debug\netcoreapp3.1\AgendamientoIPS.App.Persistencia.deps.json
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Persistencia\bin\Debug\netcoreapp3.1\AgendamientoIPS.App.Persistencia.runtimeconfig.json
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Persistencia\bin\Debug\netcoreapp3.1\AgendamientoIPS.App.Persistencia.runtimeconfig.dev.json
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Persistencia\bin\Debug\netcoreapp3.1\AgendamientoIPS.App.Persistencia.dll
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Persistencia\bin\Debug\netcoreapp3.1\AgendamientoIPS.App.Persistencia.pdb
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Persistencia\bin\Debug\netcoreapp3.1\AgendamientoIPS.App.Dominio.dll
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Persistencia\bin\Debug\netcoreapp3.1\AgendamientoIPS.App.Dominio.pdb
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Persistencia\obj\Debug\netcoreapp3.1\AgendamientoIPS.App.Persistencia.csprojAssemblyReference.cache
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Persistencia\obj\Debug\netcoreapp3.1\AgendamientoIPS.App.Persistencia.AssemblyInfoInputs.cache
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Persistencia\obj\Debug\netcoreapp3.1\AgendamientoIPS.App.Persistencia.AssemblyInfo.cs
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Persistencia\obj\Debug\netcoreapp3.1\AgendamientoIPS.App.Persistencia.csproj.CoreCompileInputs.cache
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Persistencia\obj\Debug\netcoreapp3.1\AgendamientoIPS.App.Persistencia.csproj.CopyComplete
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Persistencia\obj\Debug\netcoreapp3.1\AgendamientoIPS.App.Persistencia.dll
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Persistencia\obj\Debug\netcoreapp3.1\AgendamientoIPS.App.Persistencia.pdb
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Persistencia\obj\Debug\netcoreapp3.1\AgendamientoIPS.App.Persistencia.genruntimeconfig.cache

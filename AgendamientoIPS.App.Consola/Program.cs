@@ -7,46 +7,46 @@ namespace AgendamientoIPS.App.Consola
 {
     class Program
     {
-        private static IRepositorioPaciente _repoPaciente = new RepositorioPaciente(new Persistencia.AppContext());
-        private static IRepositorioMedico _repoMedico = new RepositorioMedico(new Persistencia.AppContext());
-        private static IRepositorioEncuesta _repoEncuesta = new RepositorioEncuesta(new Persistencia.AppContext());
-        private static IRepositorioCita _repoCita = new RepositorioCita(new Persistencia.AppContext());
-        private static IRepositorioSede _repoSede = new RepositorioSede(new Persistencia.AppContext());
-        private static IRepositorioConvenio _repoConvenio = new RepositorioConvenio(new Persistencia.AppContext());
-        private static IRepositorioFactura _repoFactura = new RepositorioFactura(new Persistencia.AppContext());        
+        private static IRepositorioPaciente _repoPaciente = new RepositorioPaciente();
+        private static IRepositorioMedico _repoMedico = new RepositorioMedico();
+        private static IRepositorioEncuesta _repoEncuesta = new RepositorioEncuesta();
+        private static IRepositorioCita _repoCita = new RepositorioCita();
+        private static IRepositorioSede _repoSede = new RepositorioSede();
+        private static IRepositorioConvenio _repoConvenio = new RepositorioConvenio();
+        private static IRepositorioFactura _repoFactura = new RepositorioFactura();        
 
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            //AddPaciente();
-            //AddMedico();
-            //AddEncuesta();
-            //AddCita();
-            //AddSede();
-            //AddConvenio();
-            //AddFactura();
-            BuscarPaciente(2);
-            MostrarPacientes();
-            BuscarMedico(3);
-            MostrarMedicos();
+            AddPaciente();
+            AddMedico();
+            AddEncuesta();
+            AddCita();
+            AddSede();
+            AddConvenio();
+            AddFactura();
+            //BuscarPaciente(2);
+            //MostrarPacientes();
+            //BuscarMedico(3);
+            //MostrarMedicos();
             //AsignarEncuesta();
             //AsignarCitaPaciente();            
             //AsignarCitaMedico();
             //AsignarCitaSede();
-            AsignarConvenioFactura();
-            AsignarCitaFactura();
+            //AsignarConvenioFactura();
+            //AsignarCitaFactura();
         }
 
         private static void AddPaciente()
         {
             var paciente = new Paciente
             {
-                Nombre = "Ginger",
+                Nombre = "Yostin",
                 PrimerApellido = "Morgan",
-                SegundoApellido = "Chen",
-                Direccion = "P.O. Box 554, 8161 Donec Avenue",
-                Telefono = "(484) 513-4027",
-                Correo = "ipsum.primis@justosit.org",
+                SegundoApellido = "Martinez",
+                Direccion = "ABC Box 666, 8161 Street Avenue",
+                Telefono = "(411) 111-1111",
+                Correo = "lorem.primis@justosit.org",
                 EPS = EPS.Ninguna
             };
             _repoPaciente.AddPaciente(paciente);
@@ -103,9 +103,9 @@ namespace AgendamientoIPS.App.Consola
         {
             var encuesta = new Encuesta
             {
-                AntecedentesMedicos = "cursus a, enim. Suspendisse aliquet, sem ut cursus luctus, ipsum leo elementum sem, vitae aliquam eros turpis non enim. Mauris quis turpis vitae purus gravida sagittis. Duis gravida. Praesent eu nulla at sem molestie sodales. Mauris blandit enim consequat purus. Maecenas libero est, congue a, aliquet vel, vulputate eu, odio.",
+                AntecedentesMedicos = "Hipertensión",
                 MotivoConsulta = MotivoConsulta.Revisión,
-                Observaciones = "a feugiat tellus lorem eu metus. In lorem. Donec elementum, lorem ut aliquam iaculis, lacus pede sagittis augue, eu tempor erat neque non quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam fringilla cursus purus. Nullam scelerisque neque sed sem egestas blandit. Nam nulla"
+                Observaciones = "Siente calor en todo el cuerpo, mareos y dolor de cabeza"
             };
             _repoEncuesta.AddEncuesta(encuesta);
         }
@@ -142,8 +142,7 @@ namespace AgendamientoIPS.App.Consola
                 Direccion = "Carrera 1, Calle 1 #1-1",
                 Telefono = "(111) 111-1111",
                 NombreSede = NombreSede.General,
-                HorarioAtencion = HorarioAtencion.EPS,
-                Ubicacion = 0,
+                HorarioAtencion = HorarioAtencion.EPS
             };
             _repoSede.AddSede(sede);
         }

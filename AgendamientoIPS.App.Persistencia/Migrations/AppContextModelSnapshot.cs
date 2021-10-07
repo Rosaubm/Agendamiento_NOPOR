@@ -207,9 +207,6 @@ namespace AgendamientoIPS.App.Persistencia.Migrations
                     b.Property<string>("Telefono")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Ubicacion")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
 
                     b.ToTable("Sedes");

@@ -1,36 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "/home/p4t0/Documents/MisiónTIC2022/AgendamientoIPS/Agendamiento_NOPOR/AgendamientoIPS.App.Consola/AgendamientoIPS.App.Consola.csproj": {}
+    "D:\\USUARIO\\Desktop\\agendamiento\\Agendamiento_NOPOR\\AgendamientoIPS.App.Consola\\AgendamientoIPS.App.Consola.csproj": {}
   },
   "projects": {
-    "/home/p4t0/Documents/MisiónTIC2022/AgendamientoIPS/Agendamiento_NOPOR/AgendamientoIPS.App.Consola/AgendamientoIPS.App.Consola.csproj": {
+    "D:\\USUARIO\\Desktop\\agendamiento\\Agendamiento_NOPOR\\AgendamientoIPS.App.Consola\\AgendamientoIPS.App.Consola.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/p4t0/Documents/MisiónTIC2022/AgendamientoIPS/Agendamiento_NOPOR/AgendamientoIPS.App.Consola/AgendamientoIPS.App.Consola.csproj",
+        "projectUniqueName": "D:\\USUARIO\\Desktop\\agendamiento\\Agendamiento_NOPOR\\AgendamientoIPS.App.Consola\\AgendamientoIPS.App.Consola.csproj",
         "projectName": "AgendamientoIPS.App.Consola",
-        "projectPath": "/home/p4t0/Documents/MisiónTIC2022/AgendamientoIPS/Agendamiento_NOPOR/AgendamientoIPS.App.Consola/AgendamientoIPS.App.Consola.csproj",
-        "packagesPath": "/home/p4t0/.nuget/packages/",
-        "outputPath": "/home/p4t0/Documents/MisiónTIC2022/AgendamientoIPS/Agendamiento_NOPOR/AgendamientoIPS.App.Consola/obj/",
+        "projectPath": "D:\\USUARIO\\Desktop\\agendamiento\\Agendamiento_NOPOR\\AgendamientoIPS.App.Consola\\AgendamientoIPS.App.Consola.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "D:\\USUARIO\\Desktop\\agendamiento\\Agendamiento_NOPOR\\AgendamientoIPS.App.Consola\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/p4t0/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "netcoreapp3.1"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "netcoreapp3.1": {
             "projectReferences": {
-              "/home/p4t0/Documents/MisiónTIC2022/AgendamientoIPS/Agendamiento_NOPOR/AgendamientoIPS.App.Dominio/AgendamientoIPS.App.Dominio.csproj": {
-                "projectPath": "/home/p4t0/Documents/MisiónTIC2022/AgendamientoIPS/Agendamiento_NOPOR/AgendamientoIPS.App.Dominio/AgendamientoIPS.App.Dominio.csproj"
+              "D:\\USUARIO\\Desktop\\agendamiento\\Agendamiento_NOPOR\\AgendamientoIPS.App.Dominio\\AgendamientoIPS.App.Dominio.csproj": {
+                "projectPath": "D:\\USUARIO\\Desktop\\agendamiento\\Agendamiento_NOPOR\\AgendamientoIPS.App.Dominio\\AgendamientoIPS.App.Dominio.csproj"
               },
-              "/home/p4t0/Documents/MisiónTIC2022/AgendamientoIPS/Agendamiento_NOPOR/AgendamientoIPS.App.Persistencia/AgendamientoIPS.App.Persistencia.csproj": {
-                "projectPath": "/home/p4t0/Documents/MisiónTIC2022/AgendamientoIPS/Agendamiento_NOPOR/AgendamientoIPS.App.Persistencia/AgendamientoIPS.App.Persistencia.csproj"
+              "D:\\USUARIO\\Desktop\\agendamiento\\Agendamiento_NOPOR\\AgendamientoIPS.App.Persistencia\\AgendamientoIPS.App.Persistencia.csproj": {
+                "projectPath": "D:\\USUARIO\\Desktop\\agendamiento\\Agendamiento_NOPOR\\AgendamientoIPS.App.Persistencia\\AgendamientoIPS.App.Persistencia.csproj"
               }
             }
           }
@@ -42,8 +41,7 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "netcoreapp3.1": {
           "dependencies": {
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -67,31 +65,30 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.401/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.413\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/p4t0/Documents/MisiónTIC2022/AgendamientoIPS/Agendamiento_NOPOR/AgendamientoIPS.App.Dominio/AgendamientoIPS.App.Dominio.csproj": {
+    "D:\\USUARIO\\Desktop\\agendamiento\\Agendamiento_NOPOR\\AgendamientoIPS.App.Dominio\\AgendamientoIPS.App.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/p4t0/Documents/MisiónTIC2022/AgendamientoIPS/Agendamiento_NOPOR/AgendamientoIPS.App.Dominio/AgendamientoIPS.App.Dominio.csproj",
+        "projectUniqueName": "D:\\USUARIO\\Desktop\\agendamiento\\Agendamiento_NOPOR\\AgendamientoIPS.App.Dominio\\AgendamientoIPS.App.Dominio.csproj",
         "projectName": "AgendamientoIPS.App.Dominio",
-        "projectPath": "/home/p4t0/Documents/MisiónTIC2022/AgendamientoIPS/Agendamiento_NOPOR/AgendamientoIPS.App.Dominio/AgendamientoIPS.App.Dominio.csproj",
-        "packagesPath": "/home/p4t0/.nuget/packages/",
-        "outputPath": "/home/p4t0/Documents/MisiónTIC2022/AgendamientoIPS/Agendamiento_NOPOR/AgendamientoIPS.App.Dominio/obj/",
+        "projectPath": "D:\\USUARIO\\Desktop\\agendamiento\\Agendamiento_NOPOR\\AgendamientoIPS.App.Dominio\\AgendamientoIPS.App.Dominio.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "D:\\USUARIO\\Desktop\\agendamiento\\Agendamiento_NOPOR\\AgendamientoIPS.App.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/p4t0/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "netstandard2.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "netstandard2.0": {
             "projectReferences": {}
           }
         },
@@ -102,8 +99,15 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -114,39 +118,33 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.401/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.413\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/p4t0/Documents/MisiónTIC2022/AgendamientoIPS/Agendamiento_NOPOR/AgendamientoIPS.App.Persistencia/AgendamientoIPS.App.Persistencia.csproj": {
+    "D:\\USUARIO\\Desktop\\agendamiento\\Agendamiento_NOPOR\\AgendamientoIPS.App.Persistencia\\AgendamientoIPS.App.Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/p4t0/Documents/MisiónTIC2022/AgendamientoIPS/Agendamiento_NOPOR/AgendamientoIPS.App.Persistencia/AgendamientoIPS.App.Persistencia.csproj",
+        "projectUniqueName": "D:\\USUARIO\\Desktop\\agendamiento\\Agendamiento_NOPOR\\AgendamientoIPS.App.Persistencia\\AgendamientoIPS.App.Persistencia.csproj",
         "projectName": "AgendamientoIPS.App.Persistencia",
-        "projectPath": "/home/p4t0/Documents/MisiónTIC2022/AgendamientoIPS/Agendamiento_NOPOR/AgendamientoIPS.App.Persistencia/AgendamientoIPS.App.Persistencia.csproj",
-        "packagesPath": "/home/p4t0/.nuget/packages/",
-        "outputPath": "/home/p4t0/Documents/MisiónTIC2022/AgendamientoIPS/Agendamiento_NOPOR/AgendamientoIPS.App.Persistencia/obj/",
+        "projectPath": "D:\\USUARIO\\Desktop\\agendamiento\\Agendamiento_NOPOR\\AgendamientoIPS.App.Persistencia\\AgendamientoIPS.App.Persistencia.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "D:\\USUARIO\\Desktop\\agendamiento\\Agendamiento_NOPOR\\AgendamientoIPS.App.Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/p4t0/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "netstandard2.1"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "netstandard2.1": {
             "projectReferences": {
-              "/home/p4t0/Documents/MisiónTIC2022/AgendamientoIPS/Agendamiento_NOPOR/AgendamientoIPS.App.Dominio/AgendamientoIPS.App.Dominio.csproj": {
-                "projectPath": "/home/p4t0/Documents/MisiónTIC2022/AgendamientoIPS/Agendamiento_NOPOR/AgendamientoIPS.App.Dominio/AgendamientoIPS.App.Dominio.csproj"
+              "D:\\USUARIO\\Desktop\\agendamiento\\Agendamiento_NOPOR\\AgendamientoIPS.App.Dominio\\AgendamientoIPS.App.Dominio.csproj": {
+                "projectPath": "D:\\USUARIO\\Desktop\\agendamiento\\Agendamiento_NOPOR\\AgendamientoIPS.App.Dominio\\AgendamientoIPS.App.Dominio.csproj"
               }
             }
           }
@@ -158,8 +156,7 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "netstandard2.1": {
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -193,11 +190,11 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.NETCore.App": {
+            "NETStandard.Library": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.401/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.413\\RuntimeIdentifierGraph.json"
         }
       }
     }

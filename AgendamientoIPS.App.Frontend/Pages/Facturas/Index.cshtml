@@ -1,0 +1,32 @@
+﻿@page
+@model AgendamientoIPS.App.Frontend.Pages.Facturas.IndexModel
+@{
+}
+<h1>Facturación</h1>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">Número de Factura</th>
+            <th scope="col">Fecha de Factura</th>
+            <th scope="col">Concepto</th>
+            <th scope="col">Convenio</th>
+            <th scope="col">Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var factura in Model.facturas)
+        {
+            <tr>
+                <td>@factura.NumFactura</td>
+                <td>@factura.FechaFactura</td>
+                <td>@factura.Concepto</td>
+                <td>@factura.IdConvenio</td>
+                <td>
+                    <a class="btn btn-primary" asp-page="./Details" asp-route-id="@factura.Id">
+                     Detalle
+                    </a>
+                    </td>
+            </tr>
+        }
+    </tbody>
+</table>

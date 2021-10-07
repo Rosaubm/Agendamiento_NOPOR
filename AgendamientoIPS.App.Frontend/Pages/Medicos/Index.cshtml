@@ -1,0 +1,33 @@
+﻿@page
+@model AgendamientoIPS.App.Frontend.Pages.Medicos.IndexModel
+@{
+}
+<h1>Listado de Médicos</h1>
+<table class="table table-hover table-dark">
+    <thead>
+        <tr>
+            <th scope="col">Especialidad</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Primer Apellido</th>
+            <th scope="col">Segundo Apellido</th>
+            <th scope="col">Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var medico in Model.medicos)
+        {
+            <tr>
+                <td>@medico.Especialidad</td>
+                <td>@medico.Nombre</td>
+                <td>@medico.PrimerApellido</td>
+                <td>@medico.SegundoApellido</td>
+                <td>
+                    <a class="btn btn-primary" asp-page="./Details" asp-route-id="@medico.Id">
+                     Detalle
+                    </a>
+                    </td>
+            </tr>
+        }
+    </tbody>
+</table>
+    

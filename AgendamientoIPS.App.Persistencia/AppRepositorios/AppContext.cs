@@ -19,7 +19,7 @@ namespace AgendamientoIPS.App.Persistencia
            {
                optionsBuilder
                //.UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = AgendamientoIPSData");
-               .UseSqlServer("Data Source = localhost; Initial Catalog = AgendamientoIPS; User Id = SA; Password = 2805.GabTT.");
+               .UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = AgendamientoIPS");
            }
        }
    }   

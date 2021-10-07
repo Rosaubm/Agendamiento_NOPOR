@@ -1,0 +1,44 @@
+﻿@page
+@model AgendamientoIPS.App.Frontend.Pages.Medicos.DetailsModel
+@{
+}
+<h1>Detalles del Médico</h1>
+<table class="table table-dark">
+    <tr>
+        <th scope="col">Tarjeta Profesional</th>
+        <td>@Model.medico.TarjetaProfesional</td>
+    </tr>
+    <tr>
+        <th scope="col">Especialidad</th>
+        <td>@Model.medico.Especialidad</td>
+    </tr>
+    <tr>
+        <th scope="col">Nombre</th>
+        <td>@Model.medico.Nombre</td>
+    </tr>
+    <tr>
+        <th scope="col">Primer Apellido</th>
+        <td>@Model.medico.PrimerApellido</td>
+    </tr>
+    <tr>
+        <th scope="col">Segundo Apellido</th>
+        <td>@Model.medico.SegundoApellido</td>
+    </tr>
+    <tr>
+        <th scope="col">Teléfono</th>
+        <td>@Model.medico.Telefono</td>
+    </tr>
+    <tr>
+        <th scope="col">Dirección</th>
+        <td>@Model.medico.Direccion</td>
+    </tr>
+    <tr>
+        <th scope="col">Correo</th>
+        <td>@Model.medico.Correo</td>
+    </tr>
+    <tr>
+        <th scope="col">EPS</th>
+        <td>@Model.medico.EPS</td>
+    </tr>
+</table>
+<a class="btn btn-primary" asp-page="./Index">Volver</a>
