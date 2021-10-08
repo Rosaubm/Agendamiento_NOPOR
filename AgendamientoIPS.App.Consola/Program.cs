@@ -7,7 +7,7 @@ namespace AgendamientoIPS.App.Consola
 {
     class Program
     {
-        private static IRepositorioPaciente _repoPaciente = new RepositorioPaciente(new Persistencia.AppContext());
+        private static IRepositorioPaciente _repoPaciente = new RepositorioPaciente(); // HASTA ACÁ LLEGAMOS
         private static IRepositorioMedico _repoMedico = new RepositorioMedico(new Persistencia.AppContext());
         private static IRepositorioEncuesta _repoEncuesta = new RepositorioEncuesta(new Persistencia.AppContext());
         private static IRepositorioCita _repoCita = new RepositorioCita(new Persistencia.AppContext());
