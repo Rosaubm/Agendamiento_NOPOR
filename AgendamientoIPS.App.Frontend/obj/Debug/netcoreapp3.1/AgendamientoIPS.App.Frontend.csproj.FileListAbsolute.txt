@@ -91,3 +91,9 @@ D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Frontend\
 D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Facturas\Details.cshtml.g.cs
 D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Medicos\Details.cshtml.g.cs
 D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Sedes\Details.cshtml.g.cs
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Pacientes\Create.cshtml.g.cs
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Citas\Create.cshtml.g.cs
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Convenios\Create.cshtml.g.cs
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Facturas\Create.cshtml.g.cs
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Medicos\Create.cshtml.g.cs
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Sedes\Create.cshtml.g.cs

@@ -1,0 +1,33 @@
+﻿@page
+@model AgendamientoIPS.App.Frontend.Pages.Facturas.CreateModel
+@{
+}
+<h1>Nueva Factura</h1>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="factura.NumFactura"></label>
+        <input asp-for="factura.NumFactura" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="factura.FechaFactura"></label>
+        <input asp-for="factura.FechaFactura" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="factura.Concepto"></label>
+        <input asp-for="factura.Concepto" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="factura.TarifaAplicada"></label>
+        <input asp-for="factura.TarifaAplicada" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="factura.ValorPagado"></label>
+        <input asp-for="factura.ValorPagado" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="factura.FormadePago"></label>
+        <input asp-for="factura.FormadePago" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Crear Paciente</button>
+</form>
+<a class="btn btn-secondary" asp-page="./Index">Volver</a>
