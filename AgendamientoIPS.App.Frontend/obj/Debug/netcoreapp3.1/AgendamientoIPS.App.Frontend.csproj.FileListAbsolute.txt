@@ -295,3 +295,9 @@ C:\ProyectoAgendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Frontend\obj\Debu
 C:\ProyectoAgendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Frontend\obj\Debug\netcoreapp3.1\AgendamientoIPS.App.Frontend.dll
 C:\ProyectoAgendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Frontend\obj\Debug\netcoreapp3.1\AgendamientoIPS.App.Frontend.pdb
 C:\ProyectoAgendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Frontend\obj\Debug\netcoreapp3.1\AgendamientoIPS.App.Frontend.genruntimeconfig.cache
+C:\ProyectoAgendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Citas\Edit.cshtml.g.cs
+C:\ProyectoAgendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Convenios\Edit.cshtml.g.cs
+C:\ProyectoAgendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Facturas\Edit.cshtml.g.cs
+C:\ProyectoAgendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Medicos\Edit.cshtml.g.cs
+C:\ProyectoAgendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Pacientes\Edit.cshtml.g.cs
+C:\ProyectoAgendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Sedes\Edit.cshtml.g.cs
