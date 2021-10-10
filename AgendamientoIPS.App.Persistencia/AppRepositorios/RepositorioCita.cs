@@ -6,12 +6,7 @@ namespace AgendamientoIPS.App.Persistencia
 {
     public class RepositorioCita : IRepositorioCita
     {
-        private readonly AppContext _appContext;
-
-        public RepositorioCita(AppContext appContext)
-        {
-            _appContext = appContext;
-        }
+        private readonly AppContext _appContext = new AppContext();
 
         Cita IRepositorioCita.AddCita(Cita cita)
         {

@@ -6,13 +6,8 @@ namespace AgendamientoIPS.App.Persistencia
 {
     public class RepositorioConvenio : IRepositorioConvenio
     {
-        private readonly AppContext _appContext;
-
-        public RepositorioConvenio(AppContext appContext)
-        {
-            _appContext = appContext;
-        }
-
+        private readonly AppContext _appContext = new AppContext();
+        
         Convenio IRepositorioConvenio.AddConvenio(Convenio convenio)
         {
             var convenioAdicionado = _appContext.Convenios.Add(convenio);

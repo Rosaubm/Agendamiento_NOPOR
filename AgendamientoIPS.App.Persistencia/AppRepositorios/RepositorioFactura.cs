@@ -6,12 +6,7 @@ namespace AgendamientoIPS.App.Persistencia
 {
     public class RepositorioFactura : IRepositorioFactura
     {
-        private readonly AppContext _appContext;
-
-        public RepositorioFactura(AppContext appContext)
-        {
-            _appContext = appContext;
-        }
+        private readonly AppContext _appContext = new AppContext();
 
         Factura IRepositorioFactura.AddFactura(Factura factura)
         {

@@ -1,0 +1,32 @@
+﻿@page
+@model AgendamientoIPS.App.Frontend.Pages.Sedes.DetailsModel
+@{
+}
+<h1>Detalles de Sede</h1>
+<table class="table table-borderless table-secondary">
+    <tr>
+        <th scope="col">Nit</th>
+        <td>@Model.sede.Nit</td>
+    </tr>
+    <tr>
+        <th scope="col">Ciudad</th>
+        <td>@Model.sede.Ciudad</td>
+    </tr>
+    <tr>
+        <th scope="col">Direccion</th>
+        <td>@Model.sede.Direccion</td>
+    </tr>
+    <tr>
+        <th scope="col">Teléfono</th>
+        <td>@Model.sede.Telefono</td>
+    </tr>
+    <tr>
+        <th scope="col">Nombre Sede</th>
+        <td>@Model.sede.NombreSede</td>
+    </tr>
+    <tr>
+        <th scope="col">Horario Atencion</th>
+        <td>@Model.sede.HorarioAtencion</td>
+    </tr>
+</table>
+<a class="btn btn-primary" asp-page="./Index">Volver</a>

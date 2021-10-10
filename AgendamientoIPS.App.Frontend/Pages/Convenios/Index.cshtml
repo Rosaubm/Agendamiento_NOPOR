@@ -1,0 +1,28 @@
+﻿@page
+@model AgendamientoIPS.App.Frontend.Pages.Convenios.IndexModel
+@{
+}
+<h1>Listado de Convenios</h1>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">Convenio</th>
+            <th scope="col">EPS</th>
+            <th scope="col">Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var convenio in Model.convenios)
+        {
+            <tr>
+                <td>@convenio.NumConvenio</td>
+                <td>@convenio.EPS</td>
+                <td>
+                    <a class="btn btn-primary" asp-page="./Details" asp-route-id="@convenio.Id">
+                     Detalle
+                    </a>
+                    </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,33 @@
+﻿@page
+@using AgendamientoIPS.App.Dominio 
+@model AgendamientoIPS.App.Frontend.Pages.Pacientes.IndexModel
+@{
+}
+<h1>Listado de Pacientes</h1>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Primer Apellido</th>
+            <th scope="col">Segundo Apellido</th>
+            <th scope="col">Teléfono</th>
+            <th scope="col">Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var paciente in Model.pacientes)
+        {
+            <tr>
+                <td>@paciente.Nombre</td>
+                <td>@paciente.PrimerApellido</td>
+                <td>@paciente.SegundoApellido</td>
+                <td>@paciente.Telefono</td>
+                <td>
+                    <a class="btn btn-primary" asp-page="./Details" asp-route-id="@paciente.Id">
+                     Detalle
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

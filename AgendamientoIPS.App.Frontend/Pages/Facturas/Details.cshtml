@@ -1,0 +1,40 @@
+﻿@page
+@model AgendamientoIPS.App.Frontend.Pages.Facturas.DetailsModel
+@{
+}
+<h1>Detalles de Factura</h1>
+<table class="table table-borderless table-secondary">
+    <tr>
+        <th scope="col">Número de Factura</th>
+        <td>@Model.factura.NumFactura</td>
+    </tr>
+    <tr>
+        <th scope="col">Fecha de Factura</th>
+        <td>@Model.factura.FechaFactura</td>
+    </tr>
+    <tr>
+        <th scope="col">Concepto</th>
+        <td>@Model.factura.Concepto</td>
+    </tr>
+    <tr>
+        <th scope="col">Tarifa Aplicada</th>
+        <td>@Model.factura.TarifaAplicada</td>
+    </tr>
+    <tr>
+        <th scope="col">Valor Pagado</th>
+        <td>@Model.factura.ValorPagado</td>
+    </tr>
+    <tr>
+        <th scope="col">Convenio</th>
+        <td>@Model.factura.IdConvenio</td>
+    </tr>
+    <tr>
+        <th scope="col">Descuento</th>
+        <td>@Model.factura.IdConvenio</td>
+    </tr>
+    <tr>
+        <th scope="col">Paciente</th>
+        <td>@Model.factura.Cita</td>
+    </tr>
+</table>
+<a class="btn btn-primary" asp-page="./Index">Volver</a>

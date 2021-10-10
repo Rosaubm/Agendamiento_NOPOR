@@ -6,12 +6,7 @@ namespace AgendamientoIPS.App.Persistencia
 {
     public class RepositorioMedico : IRepositorioMedico
     {
-        private readonly AppContext _appContext;
-
-        public RepositorioMedico(AppContext appContext)
-        {
-            _appContext = appContext;
-        }
+        private readonly AppContext _appContext  = new AppContext();
 
         Medico IRepositorioMedico.AddMedico(Medico medico)
         {

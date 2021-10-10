@@ -6,12 +6,7 @@ namespace AgendamientoIPS.App.Persistencia
 {
     public class RepositorioSede : IRepositorioSede
     {
-        private readonly AppContext _appContext;
-
-        public RepositorioSede(AppContext appContext)
-        {
-            _appContext = appContext;
-        }
+        private readonly AppContext _appContext = new AppContext();
 
         Sede IRepositorioSede.AddSede(Sede sede)
         {

@@ -1,0 +1,34 @@
+﻿@page
+@model AgendamientoIPS.App.Frontend.Pages.Citas.IndexModel
+@{
+}
+<h1>Listado de Citas</h1>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">Número de Cita</th>
+            <th scope="col">Tipo de Cita</th>
+            <th scope="col">Especialidad</th>
+            <th scope="col">Médico</th>
+            <th scope="col">Paciente</th>
+            <th scope="col">Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var cita in Model.citas)
+        {
+            <tr>
+                <td>@cita.NumCita</td>
+                <td>@cita.TipoCita</td>
+                <td>@cita.Especialidad</td>
+                <td>@cita.IdMedico</td>
+                <td>@cita.IdPaciente</td>
+                <td>
+                    <a class="btn btn-primary" asp-page="./Details" asp-route-id="@cita.Id">
+                     Detalle
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
