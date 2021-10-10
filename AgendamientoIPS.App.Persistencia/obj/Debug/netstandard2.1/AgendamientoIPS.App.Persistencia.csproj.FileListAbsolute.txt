@@ -22,3 +22,15 @@ C:\Users\usuario\Desktop\Agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Per
 C:\Users\usuario\Desktop\Agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Persistencia\obj\Debug\netstandard2.1\AgendamientoIPS.App.Persistencia.csproj.CopyComplete
 C:\Users\usuario\Desktop\Agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Persistencia\obj\Debug\netstandard2.1\AgendamientoIPS.App.Persistencia.dll
 C:\Users\usuario\Desktop\Agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Persistencia\obj\Debug\netstandard2.1\AgendamientoIPS.App.Persistencia.pdb
+C:\ProyectoAgendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Persistencia\bin\Debug\netstandard2.1\AgendamientoIPS.App.Persistencia.deps.json
+C:\ProyectoAgendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Persistencia\bin\Debug\netstandard2.1\AgendamientoIPS.App.Persistencia.dll
+C:\ProyectoAgendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Persistencia\bin\Debug\netstandard2.1\AgendamientoIPS.App.Persistencia.pdb
+C:\ProyectoAgendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Persistencia\bin\Debug\netstandard2.1\AgendamientoIPS.App.Dominio.dll
+C:\ProyectoAgendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Persistencia\bin\Debug\netstandard2.1\AgendamientoIPS.App.Dominio.pdb
+C:\ProyectoAgendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Persistencia\obj\Debug\netstandard2.1\AgendamientoIPS.App.Persistencia.csprojAssemblyReference.cache
+C:\ProyectoAgendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Persistencia\obj\Debug\netstandard2.1\AgendamientoIPS.App.Persistencia.AssemblyInfoInputs.cache
+C:\ProyectoAgendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Persistencia\obj\Debug\netstandard2.1\AgendamientoIPS.App.Persistencia.AssemblyInfo.cs
+C:\ProyectoAgendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Persistencia\obj\Debug\netstandard2.1\AgendamientoIPS.App.Persistencia.csproj.CoreCompileInputs.cache
+C:\ProyectoAgendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Persistencia\obj\Debug\netstandard2.1\AgendamientoIPS.App.Persistencia.csproj.CopyComplete
+C:\ProyectoAgendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Persistencia\obj\Debug\netstandard2.1\AgendamientoIPS.App.Persistencia.dll
+C:\ProyectoAgendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Persistencia\obj\Debug\netstandard2.1\AgendamientoIPS.App.Persistencia.pdb
