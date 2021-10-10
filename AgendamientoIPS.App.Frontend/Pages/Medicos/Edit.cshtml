@@ -1,0 +1,50 @@
+﻿@page
+@using AgendamientoIPS.App.Dominio
+@model AgendamientoIPS.App.Frontend.Pages.Medicos.EditModel
+@{
+}
+<h1>Editar Médico</h1>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="medico.Id"></label>
+        <input asp-for="medico.Id" class="form-control" readonly>
+    </div>    
+    <div class="form-group">
+        <label asp-for="medico.Nombre">Nombre</label>
+        <input asp-for="medico.Nombre" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="medico.PrimerApellido">Primer Apellido</label>
+        <input asp-for="medico.PrimerApellido" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="medico.SegundoApellido">Segundo Apellido</label>
+        <input asp-for="medico.SegundoApellido" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="medico.Direccion">Dirección</label>
+        <input asp-for="medico.Direccion" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="medico.Telefono">Teléfono</label>
+        <input asp-for="medico.Telefono" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="medico.Correo">Correo Electrónico</label>
+        <input asp-for="medico.Correo" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="medico.TarjetaProfesional">Tarjeta Profesional</label>
+        <input asp-for="medico.TarjetaProfesional" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="medico.Especialidad">Especialidad</label>
+        <input asp-for="medico.Especialidad" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="medico.EPS">EPS</label>
+        <select asp-for="medico.EPS" asp-items="Html.GetEnumSelectList<EPS>()" class="form-control"></select>
+    </div>
+    <button type="submit" class="btn btn-primary">Editar Médico</button>
+</form>
+<a class="btn btn-secondary" asp-page="./Index">Volver</a>

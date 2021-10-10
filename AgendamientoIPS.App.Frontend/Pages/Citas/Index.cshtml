@@ -26,9 +26,8 @@
                 <td>@cita.IdMedico</td>
                 <td>@cita.IdPaciente</td>
                 <td>
-                    <a class="btn btn-primary" asp-page="./Details" asp-route-id="@cita.Id">
-                     Detalle
-                    </a>
+                    <a class="btn btn-primary" asp-page="./Details" asp-route-id="@cita.Id">Detalle</a>
+                    <a class="btn btn-warning" asp-page="./Edit" asp-route-id="@cita.Id">Editar</a>
                 </td>
             </tr>
         }

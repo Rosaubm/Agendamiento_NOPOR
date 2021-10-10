@@ -20,9 +20,8 @@
                 <td>@convenio.NumConvenio</td>
                 <td>@convenio.EPS</td>
                 <td>
-                    <a class="btn btn-primary" asp-page="./Details" asp-route-id="@convenio.Id">
-                     Detalle
-                    </a>
+                    <a class="btn btn-primary" asp-page="./Details" asp-route-id="@convenio.Id">Detalle</a>
+                    <a class="btn btn-warning" asp-page="./Edit" asp-route-id="@convenio.Id">Editar</a>
                     </td>
             </tr>
         }

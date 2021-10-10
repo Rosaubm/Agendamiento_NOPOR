@@ -24,9 +24,8 @@
                 <td>@paciente.SegundoApellido</td>
                 <td>@paciente.Telefono</td>
                 <td>
-                    <a class="btn btn-primary" asp-page="./Details" asp-route-id="@paciente.Id">
-                     Detalle
-                    </a>
+                    <a class="btn btn-primary" asp-page="./Details" asp-route-id="@paciente.Id">Detalle</a>
+                    <a class="btn btn-warning" asp-page="./Edit" asp-route-id="@paciente.Id">Editar</a>
                 </td>
             </tr>
         }

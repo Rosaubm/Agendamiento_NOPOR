@@ -22,9 +22,8 @@
                 <td>@encuesta.MotivoConsulta</td>
                 <td>@encuesta.Observaciones</td>
                 <td>
-                    <a class="btn btn-primary" asp-page="./Details" asp-route-id="@encuesta.Id">
-                     Detalle
-                    </a>
+                    <a class="btn btn-primary" asp-page="./Details" asp-route-id="@encuesta.Id">Detalle</a>
+                    <a class="btn btn-warning" asp-page="./Edit" asp-route-id="@encuesta.Id">Editar</a>
                 </td>
             </tr>
         }

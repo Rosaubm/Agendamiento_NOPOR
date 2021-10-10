@@ -91,3 +91,10 @@
 /home/p4t0/Documents/MisiónTIC2022/AgendamientoIPS/Agendamiento_NOPOR/AgendamientoIPS.App.Frontend/obj/Debug/net5.0/Razor/Pages/Encuestas/Create.cshtml.g.cs
 /home/p4t0/Documents/MisiónTIC2022/AgendamientoIPS/Agendamiento_NOPOR/AgendamientoIPS.App.Frontend/obj/Debug/net5.0/Razor/Pages/Encuestas/Details.cshtml.g.cs
 /home/p4t0/Documents/MisiónTIC2022/AgendamientoIPS/Agendamiento_NOPOR/AgendamientoIPS.App.Frontend/obj/Debug/net5.0/Razor/Pages/Encuestas/Index.cshtml.g.cs
+/home/p4t0/Documents/MisiónTIC2022/AgendamientoIPS/Agendamiento_NOPOR/AgendamientoIPS.App.Frontend/obj/Debug/net5.0/Razor/Pages/Citas/Edit.cshtml.g.cs
+/home/p4t0/Documents/MisiónTIC2022/AgendamientoIPS/Agendamiento_NOPOR/AgendamientoIPS.App.Frontend/obj/Debug/net5.0/Razor/Pages/Convenios/Edit.cshtml.g.cs
+/home/p4t0/Documents/MisiónTIC2022/AgendamientoIPS/Agendamiento_NOPOR/AgendamientoIPS.App.Frontend/obj/Debug/net5.0/Razor/Pages/Encuestas/Edit.cshtml.g.cs
+/home/p4t0/Documents/MisiónTIC2022/AgendamientoIPS/Agendamiento_NOPOR/AgendamientoIPS.App.Frontend/obj/Debug/net5.0/Razor/Pages/Facturas/Edit.cshtml.g.cs
+/home/p4t0/Documents/MisiónTIC2022/AgendamientoIPS/Agendamiento_NOPOR/AgendamientoIPS.App.Frontend/obj/Debug/net5.0/Razor/Pages/Medicos/Edit.cshtml.g.cs
+/home/p4t0/Documents/MisiónTIC2022/AgendamientoIPS/Agendamiento_NOPOR/AgendamientoIPS.App.Frontend/obj/Debug/net5.0/Razor/Pages/Pacientes/Edit.cshtml.g.cs
+/home/p4t0/Documents/MisiónTIC2022/AgendamientoIPS/Agendamiento_NOPOR/AgendamientoIPS.App.Frontend/obj/Debug/net5.0/Razor/Pages/Sedes/Edit.cshtml.g.cs

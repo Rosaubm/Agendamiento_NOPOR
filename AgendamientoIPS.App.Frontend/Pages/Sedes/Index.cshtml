@@ -19,9 +19,8 @@
                 <td>@sede.Ciudad</td>
                 <td>@sede.NombreSede</td>
                 <td>
-                    <a class="btn btn-primary" asp-page="./Details" asp-route-id="@sede.Id">
-                     Detalle
-                    </a>
+                    <a class="btn btn-primary" asp-page="./Details" asp-route-id="@sede.Id">Detalle</a>
+                    <a class="btn btn-warning" asp-page="./Edit" asp-route-id="@sede.Id">Editar</a>
                 </td>
             </tr>
         }

@@ -24,9 +24,8 @@
                 <td>@factura.Concepto</td>
                 <td>@factura.IdConvenio</td>
                 <td>
-                    <a class="btn btn-primary" asp-page="./Details" asp-route-id="@factura.Id">
-                     Detalle
-                    </a>
+                    <a class="btn btn-primary" asp-page="./Details" asp-route-id="@factura.Id">Detalle</a>
+                    <a class="btn btn-warning" asp-page="./Edit" asp-route-id="@factura.Id">Editar</a>
                 </td>
             </tr>
         }

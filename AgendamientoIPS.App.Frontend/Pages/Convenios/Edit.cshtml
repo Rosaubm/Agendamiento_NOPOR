@@ -1,0 +1,26 @@
+﻿@page
+@using AgendamientoIPS.App.Dominio
+@model AgendamientoIPS.App.Frontend.Pages.Convenios.EditModel
+@{
+}
+<h1>Editar Convenio</h1>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="convenio.Id"></label>
+        <input asp-for="convenio.Id" class="form-control" readonly>
+    </div>        
+    <div class="form-group">
+        <label asp-for="convenio.NumConvenio">Número de Convenio</label>
+        <input asp-for="convenio.NumConvenio" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="convenio.EPS"></label>
+        <select asp-for="convenio.EPS" asp-items="Html.GetEnumSelectList<EPS>()" class="form-control"></select>
+    </div>
+    <div class="form-group">
+        <label asp-for="convenio.Descuento"></label>
+        <input asp-for="convenio.Descuento" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Editar Convenio</button>
+</form>
+<a class="btn btn-secondary" asp-page="./Index">Volver</a>

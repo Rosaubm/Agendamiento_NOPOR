@@ -1,10 +1,14 @@
 ﻿@page
 @using AgendamientoIPS.App.Dominio
-@model AgendamientoIPS.App.Frontend.Pages.Sedes.CreateModel
+@model AgendamientoIPS.App.Frontend.Pages.Sedes.EditModel
 @{
 }
-<h1>Nueva Sede</h1>
+<h1>Editar Sede</h1>
 <form method="post">
+    <div class="form-group">
+        <label asp-for="sede.Id"></label>
+        <input asp-for="sede.Id" class="form-control" readonly>
+    </div>    
     <div class="form-group">
         <label asp-for="sede.Nit">NIT</label>
         <input asp-for="sede.Nit" class="form-control">
