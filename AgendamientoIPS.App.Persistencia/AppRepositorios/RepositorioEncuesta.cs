@@ -6,12 +6,7 @@ namespace AgendamientoIPS.App.Persistencia
 {
     public class RepositorioEncuesta : IRepositorioEncuesta
     {
-        private readonly AppContext _appContext;
-
-        public RepositorioEncuesta(AppContext appContext)
-        {
-            _appContext = appContext;
-        }
+        private readonly AppContext _appContext = new AppContext();
 
         Encuesta IRepositorioEncuesta.AddEncuesta(Encuesta encuesta)
         {

@@ -11,7 +11,7 @@ namespace AgendamientoIPS.App.Consola
         //Modificamos la forma en que se creará la instancia de la clase RepositorioPaciente en la aplicación
         private static IRepositorioPaciente _repoPaciente = new RepositorioPaciente();
         private static IRepositorioMedico _repoMedico = new RepositorioMedico();
-        private static IRepositorioEncuesta _repoEncuesta = new RepositorioEncuesta(new Persistencia.AppContext());
+        private static IRepositorioEncuesta _repoEncuesta = new RepositorioEncuesta();
         private static IRepositorioCita _repoCita = new RepositorioCita();
         private static IRepositorioSede _repoSede = new RepositorioSede();
         private static IRepositorioConvenio _repoConvenio = new RepositorioConvenio();

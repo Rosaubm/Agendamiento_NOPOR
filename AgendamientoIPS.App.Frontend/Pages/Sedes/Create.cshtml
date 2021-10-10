@@ -1,0 +1,38 @@
+﻿@page
+@using AgendamientoIPS.App.Dominio
+@model AgendamientoIPS.App.Frontend.Pages.Sedes.CreateModel
+@{
+}
+<h1>Nuevo Médico</h1>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="sede.Nit">NIT</label>
+        <input asp-for="sede.Nit" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="sede.Ciudad">Ciudad</label>
+        <select asp-for="sede.Ciudad" asp-items="Html.GetEnumSelectList<Ciudad>()" class="form-control"></select>
+    </div>
+    <div class="form-group">
+        <label asp-for="sede.Direccion">Dirección</label>
+        <input asp-for="sede.Direccion" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="sede.Telefono">Teléfono</label>
+        <input asp-for="sede.Telefono" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="sede.NombreSede">Nombre de la Sede</label>
+        <select asp-for="sede.NombreSede" asp-items="Html.GetEnumSelectList<NombreSede>()" class="form-control"></select>
+    </div>
+    <div class="form-group">
+        <label asp-for="sede.HorarioAtencion">Horario de Atención</label>
+        <select asp-for="sede.HorarioAtencion" asp-items="Html.GetEnumSelectList<HorarioAtencion>()" class="form-control"></select>
+    </div>
+    <div class="form-group">
+        <label asp-for="sede.Ubicacion">Ubicación</label>
+        <input asp-for="sede.Ubicacion" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Crear Sede</button>
+</form>
+<a class="btn btn-secondary" asp-page="./Index">Volver</a>

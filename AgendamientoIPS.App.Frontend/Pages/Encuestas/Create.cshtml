@@ -1,0 +1,22 @@
+﻿@page
+@using AgendamientoIPS.App.Dominio
+@model AgendamientoIPS.App.Frontend.Pages.Encuestas.CreateModel
+@{
+}
+<h1>Nueva Encuesta</h1>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="encuesta.AntecedentesMedicos">Antecedentes Médicos</label>
+        <input asp-for="encuesta.AntecedentesMedicos" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="encuesta.MotivoConsulta"></label>
+        <select asp-for="encuesta.MotivoConsulta" asp-items="Html.GetEnumSelectList<MotivoConsulta>()" class="form-control"></select>
+    </div>
+    <div class="form-group">
+        <label asp-for="encuesta.Observaciones"></label>
+        <input asp-for="encuesta.Observaciones" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Crear Encuesta</button>
+</form>
+<a class="btn btn-secondary" asp-page="./Index">Volver</a>

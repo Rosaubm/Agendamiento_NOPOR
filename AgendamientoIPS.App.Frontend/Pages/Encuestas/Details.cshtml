@@ -1,0 +1,20 @@
+﻿@page
+@model AgendamientoIPS.App.Frontend.Pages.Encuestas.DetailsModel
+@{
+}
+<h1>Detalles de la Encuesta</h1>
+<table class="table table-borderless table-secondary">
+    <tr>
+        <th scope="col">Antecedentes Médicos</th>
+        <td>@Model.encuesta.AntecedentesMedicos</td>
+    </tr>
+    <tr>
+        <th scope="col">Motivo de la Consulta</th>
+        <td>@Model.encuesta.MotivoConsulta</td>
+    </tr>
+    <tr>
+        <th scope="col">Observaciones</th>
+        <td>@Model.encuesta.Observaciones</td>
+    </tr>
+</table>
+<a class="btn btn-primary" asp-page="./Index">Volver</a>

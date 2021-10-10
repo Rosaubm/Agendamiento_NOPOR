@@ -1,0 +1,32 @@
+﻿@page
+@using AgendamientoIPS.App.Dominio 
+@model AgendamientoIPS.App.Frontend.Pages.Encuestas.IndexModel
+@{
+}
+<a class="btn btn-primary" asp-page="./Create">Nueva Encuesta</a>
+
+<h1>Encuestas</h1>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">Antecedentes Médicos</th>
+            <th scope="col">Motivo de Consulta</th>
+            <th scope="col">Observaciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var encuesta in Model.encuestas)
+        {
+            <tr>
+                <td>@encuesta.AntecedentesMedicos</td>
+                <td>@encuesta.MotivoConsulta</td>
+                <td>@encuesta.Observaciones</td>
+                <td>
+                    <a class="btn btn-primary" asp-page="./Details" asp-route-id="@encuesta.Id">
+                     Detalle
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
