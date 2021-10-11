@@ -23,8 +23,15 @@ namespace AgendamientoIPS.App.Frontend.Pages.Convenios
         }
         public IActionResult OnPost(Convenio convenio)
         {
-            _repoConvenio.AddConvenio(convenio);
-            return RedirectToPage("Index");
+            if (ModelState.IsValid)
+            {
+                _repoConvenio.AddConvenio(convenio);
+                return RedirectToPage("Index");
+            }
+            else
+            {
+                return Page();
+            }
         }
     }
 }

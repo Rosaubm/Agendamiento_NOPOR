@@ -2,41 +2,50 @@
 @using AgendamientoIPS.App.Dominio
 @model AgendamientoIPS.App.Frontend.Pages.Pacientes.EditModel
 @{
+    ViewData["Title"] = "Editar Paciente";
 }
+<br>
 <h1>Editar Paciente</h1>
 <form method="post">
     <div class="form-group">
         <label asp-for="paciente.Id"></label>
-        <input asp-for="paciente.Id" class="form-control" readonly>
+        <input asp-for="paciente.Id" class="form-control" readonly>        
     </div>
     <div class="form-group">
-        <label asp-for="paciente.Nombre">Nombre</label>
+        <label asp-for="paciente.Nombre"></label>
         <input asp-for="paciente.Nombre" class="form-control">
+        <span asp-validation-for = "paciente.Nombre" class = "text-danger"></span>        
     </div>
     <div class="form-group">
-        <label asp-for="paciente.PrimerApellido">Primer Apellido</label>
+        <label asp-for="paciente.PrimerApellido"></label>
         <input asp-for="paciente.PrimerApellido" class="form-control">
+        <span asp-validation-for = "paciente.PrimerApellido" class = "text-danger"></span>
     </div>
     <div class="form-group">
-        <label asp-for="paciente.SegundoApellido">Segundo Apellido</label>
+        <label asp-for="paciente.SegundoApellido"></label>
         <input asp-for="paciente.SegundoApellido" class="form-control">
+        <span asp-validation-for = "paciente.SegundoApellido" class = "text-danger"></span>        
     </div>
     <div class="form-group">
-        <label asp-for="paciente.Direccion">Dirección</label>
+        <label asp-for="paciente.Direccion"></label>
         <input asp-for="paciente.Direccion" class="form-control">
+        <span asp-validation-for = "paciente.Direccion" class = "text-danger"></span>        
     </div>
     <div class="form-group">
-        <label asp-for="paciente.Telefono">Teléfono</label>
+        <label asp-for="paciente.Telefono"></label>
         <input asp-for="paciente.Telefono" class="form-control">
+        <span asp-validation-for = "paciente.Telefono" class = "text-danger"></span>        
     </div>
     <div class="form-group">
-        <label asp-for="paciente.Correo">Correo Electrónico</label>
+        <label asp-for="paciente.Correo"></label>
         <input asp-for="paciente.Correo" class="form-control">
+        <span asp-validation-for = "paciente.Correo" class = "text-danger"></span>        
     </div>
     <div class="form-group">
         <label asp-for="paciente.EPS">EPS</label>
         <select asp-for="paciente.EPS" asp-items="Html.GetEnumSelectList<EPS>()" class="form-control"></select>
     </div>
-    <button type="submit" class="btn btn-primary">Editar Paciente</button>
+    <button type="submit" class="btn btn-success">Editar Paciente</button>
 </form>
+<br>
 <a class="btn btn-secondary" asp-page="./Index">Volver</a>

@@ -31,8 +31,15 @@ namespace AgendamientoIPS.App.Frontend.Pages.Sedes
         }
         public IActionResult OnPost(Sede sede)
         {
-            _repoSede.UpdateSede(sede);
-            return RedirectToPage("Index");
+            if (ModelState.IsValid)
+            {
+                _repoSede.UpdateSede(sede);
+                return RedirectToPage("Index");
+            }
+            else
+            {
+                return Page();
+            }
         }
     }
 }

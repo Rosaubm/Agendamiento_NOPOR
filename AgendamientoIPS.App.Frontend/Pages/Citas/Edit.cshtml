@@ -1,8 +1,10 @@
 ﻿@page
 @using AgendamientoIPS.App.Dominio
-@model AgendamientoIPS.App.Frontend.Pages.Citas.CreateModel
+@model AgendamientoIPS.App.Frontend.Pages.Citas.EditModel
 @{
+    ViewData["Title"] = "Editar Cita";
 }
+<br>
 <h1>Editar Cita</h1>
 <form method="post">
     <div class="form-group">
@@ -10,26 +12,27 @@
         <input asp-for="cita.Id" class="form-control" readonly>
     </div>       
     <div class="form-group">
-        <label asp-for="cita.TipoCita">Tipo de Cita</label>
+        <label asp-for="cita.TipoCita"></label>
         <select asp-for="cita.TipoCita" asp-items="Html.GetEnumSelectList<TipoCita>()" class="form-control"></select>
     </div>
     <div class="form-group">
-        <label asp-for="cita.NumCita">Número de Cita</label>
+        <label asp-for="cita.NumCita"></label>
         <input asp-for="cita.NumCita" class="form-control">
     </div>
     <div class="form-group">
-        <label asp-for="cita.Especialidad">Especialidad</label>
+        <label asp-for="cita.Especialidad"></label>
         <input asp-for="cita.Especialidad" class="form-control">
         <span asp-validation-for = "cita.Especialidad" class = "text-danger"></span>
     </div>
     <div class="form-group">
-        <label asp-for="cita.Hora">Hora</label>
-        <input type="time" asp-for="cita.Hora" class="form-control" min="09:00" max="18:00">
+        <label asp-for="cita.Hora"></label>
+        <input type="time" asp-for="cita.Hora" class="form-control">
     </div>
     <div class="form-group">
-        <label asp-for="cita.Fecha">Fecha</label>
+        <label asp-for="cita.Fecha"></label>
         <input type="date" asp-for="cita.Fecha" class="form-control">
     </div>
-    <button type="submit" class="btn btn-primary">Editar Cita</button>
+    <button type="submit" class="btn btn-success">Editar Cita</button>
 </form>
+<br>
 <a class="btn btn-secondary" asp-page="./Index">Volver</a>

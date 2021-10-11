@@ -1,7 +1,9 @@
 ﻿@page
 @model AgendamientoIPS.App.Frontend.Pages.Medicos.DetailsModel
 @{
+    ViewData["Title"] = "Detalles del Médico";
 }
+<br>
 <h1>Detalles del Médico</h1>
 <table class="table table-borderless table-secondary">
     <tr>
@@ -41,4 +43,4 @@
         <td>@Model.medico.EPS</td>
     </tr>
 </table>
-<a class="btn btn-primary" asp-page="./Index">Volver</a>
+<a class="btn btn-secondary" asp-page="./Index">Volver</a>

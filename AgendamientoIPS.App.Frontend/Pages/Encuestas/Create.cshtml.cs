@@ -23,8 +23,15 @@ namespace AgendamientoIPS.App.Frontend.Pages.Encuestas
         }
         public IActionResult OnPost(Encuesta encuesta)
         {
-            _repoEncuesta.AddEncuesta(encuesta);
-            return RedirectToPage("Index");
+            if (ModelState.IsValid)
+            {
+                _repoEncuesta.AddEncuesta(encuesta);
+                return RedirectToPage("Index");
+            }
+            else
+            {
+                return Page();
+            }
         }
     }
 }

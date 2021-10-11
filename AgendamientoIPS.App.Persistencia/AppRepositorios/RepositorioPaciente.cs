@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 using AgendamientoIPS.App.Dominio;
 
 namespace AgendamientoIPS.App.Persistencia
@@ -39,7 +40,7 @@ namespace AgendamientoIPS.App.Persistencia
 
         Paciente IRepositorioPaciente.GetPaciente(int idPaciente)
         {
-            return _appContext.Pacientes.FirstOrDefault(p => p.Id == idPaciente);
+            return _appContext.Pacientes.FirstOrDefault(p => p.Id == idPaciente);   
         }
 
         Paciente IRepositorioPaciente.UpdatePaciente(Paciente paciente)

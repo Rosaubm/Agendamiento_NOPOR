@@ -1,10 +1,16 @@
 ﻿@page
 @model AgendamientoIPS.App.Frontend.Pages.Citas.IndexModel
 @{
+    ViewData["Title"] = "Citas";
 }
-<a class="btn btn-primary" asp-page="./Create">Nueva Cita</a>
+<br>
+<table style="width: 100%;">
+    <tr style="width: 100%;">
+        <td style="width: 80%;"><h1>Listado de Citas</h1></td>
+        <td style="width: 20%;" text-align="right";><a class="btn btn-success" asp-page="./Create">Nueva Cita</a></td>
+    </tr>
+</table>
 
-<h1>Listado de Citas</h1>
 <table class="table table-hover">
     <thead>
         <tr>
@@ -13,7 +19,7 @@
             <th scope="col">Especialidad</th>
             <th scope="col">Médico</th>
             <th scope="col">Paciente</th>
-            <th scope="col">Acciones</th>
+            <th style="width: 20%;" scope="col">Acciones</th>
         </tr>
     </thead>
     <tbody>
@@ -25,9 +31,9 @@
                 <td>@cita.Especialidad</td>
                 <td>@cita.IdMedico</td>
                 <td>@cita.IdPaciente</td>
-                <td>
-                    <a class="btn btn-primary" asp-page="./Details" asp-route-id="@cita.Id">Detalle</a>
-                    <a class="btn btn-warning" asp-page="./Edit" asp-route-id="@cita.Id">Editar</a>
+                <td style="width: 20%;">
+                    <a class="btn btn-primary btn-sm" asp-page="./Details" asp-route-id="@cita.Id">Detalle</a>
+                    <a class="btn btn-warning btn-sm" asp-page="./Edit" asp-route-id="@cita.Id">Editar</a>
                 </td>
             </tr>
         }

@@ -1,7 +1,9 @@
 ﻿@page
 @model AgendamientoIPS.App.Frontend.Pages.Convenios.DetailsModel
 @{
+    ViewData["Title"] = "Detalles del Convenio";
 }
+<br>
 <h1>Detalles del Convenio</h1>
 <table class="table table-borderless table-secondary">
     <tr>
@@ -14,7 +16,7 @@
     </tr>
     <tr>
         <th scope="col">Descuento</th>
-        <td>@Model.convenio.Descuento</td>
+        <td>@Model.convenio.Descuento%</td>
     </tr>
 </table>
-<a class="btn btn-primary" asp-page="./Index">Volver</a>
+<a class="btn btn-secondary" asp-page="./Index">Volver</a>

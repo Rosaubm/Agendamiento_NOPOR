@@ -15,7 +15,7 @@ namespace AgendamientoIPS.App.Consola
         private static IRepositorioCita _repoCita = new RepositorioCita();
         private static IRepositorioSede _repoSede = new RepositorioSede();
         private static IRepositorioConvenio _repoConvenio = new RepositorioConvenio();
-        private static IRepositorioFactura _repoFactura = new RepositorioFactura();        
+        private static IRepositorioFactura _repoFactura = new RepositorioFactura();
 
         static void Main(string[] args)
         {
@@ -27,16 +27,16 @@ namespace AgendamientoIPS.App.Consola
             //AddSede();
             //AddConvenio();
             //AddFactura();
-            BuscarPaciente(2);
-            MostrarPacientes();
-            BuscarMedico(3);
-            MostrarMedicos();
+            //BuscarPaciente(2);
+            //MostrarPacientes();
+            //BuscarMedico(3);
+            //MostrarMedicos();
             //AsignarEncuesta();
             //AsignarCitaPaciente();            
             //AsignarCitaMedico();
             //AsignarCitaSede();
-            AsignarConvenioFactura();
-            AsignarCitaFactura();
+            //AsignarConvenioFactura();
+            //AsignarCitaFactura();
         }
 
         private static void AddPaciente()
@@ -73,15 +73,15 @@ namespace AgendamientoIPS.App.Consola
         {
             var medico = new Medico
             {
-                Nombre = "Tashya",
-                PrimerApellido = "Pate",
-                SegundoApellido = "Lucas",
-                Direccion = "Ap #860-8492 Sapien, St.",
-                Telefono = "(421) 925-4922",
-                Correo = "facilisis.eget@eu.com",
-                EPS = EPS.NuevaEPS,
-                TarjetaProfesional = "TP-1417525",
-                Especialidad = "Reumatología"
+                Nombre = "Mira",
+                PrimerApellido = "Bridges",
+                SegundoApellido = "Hobbs",
+                Direccion = "P.O. Box 170, 3086 Vulputate Street",
+                Telefono = "(237) 420-1433",
+                Correo = "suspendisse@dignissimpharetranam.ca",
+                EPS = EPS.Sanitas,
+                TarjetaProfesional = "TP-0142213",
+                Especialidad = "Hepatología"
             };
             _repoMedico.AddMedico(medico);
         }
@@ -114,7 +114,7 @@ namespace AgendamientoIPS.App.Consola
 
         private static void AsignarEncuesta()
         {
-            var encuesta = _repoPaciente.AsignarEncuesta(1,1);
+            var encuesta = _repoPaciente.AsignarEncuesta(1, 1);
             var paciente = _repoPaciente.GetPaciente(1);
             Console.WriteLine("Nombre paciente: " + paciente.Nombre + " " + paciente.PrimerApellido + " quedó asignado a la encuesta: " + encuesta.Id);
         }
@@ -126,8 +126,8 @@ namespace AgendamientoIPS.App.Consola
                 TipoCita = TipoCita.Virtual,
                 NumCita = 1,
                 Especialidad = "Dolor y cuidados paliativos",
-                Hora = new TimeSpan(17,15,10),
-                Fecha = new DateTime(2021,12,21),
+                Hora = new TimeSpan(17, 15, 10),
+                Fecha = new DateTime(2021, 12, 21),
                 IdMedico = null,
                 IdPaciente = null,
                 IdSede = null
@@ -152,7 +152,7 @@ namespace AgendamientoIPS.App.Consola
 
         private static void AsignarCitaPaciente()
         {
-            var citapaciente = _repoCita.AsignarCitaPaciente(1,1);
+            var citapaciente = _repoCita.AsignarCitaPaciente(1, 1);
             var paciente = _repoPaciente.GetPaciente(1);
             var cita = _repoCita.GetCita(1);
             Console.WriteLine("Nombre paciente: " + paciente.Nombre + " " + paciente.PrimerApellido + " quedó asignado a la cita: " + cita.NumCita);
@@ -160,17 +160,17 @@ namespace AgendamientoIPS.App.Consola
 
         private static void AsignarCitaMedico()
         {
-            var citamedico = _repoCita.AsignarCitaMedico(1,3);
+            var citamedico = _repoCita.AsignarCitaMedico(1, 3);
             var medico = _repoMedico.GetMedico(3);
-            var cita = _repoCita.GetCita(1);            
+            var cita = _repoCita.GetCita(1);
             Console.WriteLine("Nombre médico: " + medico.Nombre + " " + medico.PrimerApellido + " quedó asignado a la cita: " + cita.NumCita);
         }
 
         private static void AsignarCitaSede()
         {
-            var citasede = _repoCita.AsignarCitaSede(1,1);
+            var citasede = _repoCita.AsignarCitaSede(1, 1);
             var sede = _repoSede.GetSede(1);
-            var cita = _repoCita.GetCita(1);            
+            var cita = _repoCita.GetCita(1);
             Console.WriteLine("La cita: " + cita.NumCita + " quedó asignada a la sede: " + sede.Id);
         }
 
@@ -183,15 +183,15 @@ namespace AgendamientoIPS.App.Consola
                 Descuento = 20
             };
             _repoConvenio.AddConvenio(convenio);
-        }    
-        
+        }
+
         private static void AddFactura()
         {
             var factura = new Factura
             {
                 Cita = null,
                 NumFactura = 1,
-                FechaFactura = new DateTime(2021,12,21),
+                FechaFactura = new DateTime(2021, 12, 21),
                 Concepto = "In tincidunt congue turpis. In condimentum. Donec at arcu. Vestibulum",
                 TarifaAplicada = 91967,
                 ValorPagado = 73574,
@@ -203,18 +203,18 @@ namespace AgendamientoIPS.App.Consola
 
         private static void AsignarConvenioFactura()
         {
-            var conveniofactura = _repoFactura.AsignarConvenioFactura(1,1);
+            var conveniofactura = _repoFactura.AsignarConvenioFactura(1, 1);
             var factura = _repoFactura.GetFactura(1);
-            var convenio = _repoConvenio.GetConvenio(1);            
+            var convenio = _repoConvenio.GetConvenio(1);
             Console.WriteLine("El convenio: " + convenio.Id + " quedó asignado a la factura: " + factura.Id);
         }
 
         private static void AsignarCitaFactura()
         {
-            var citafactura = _repoFactura.AsignarCitaFactura(1,1);
+            var citafactura = _repoFactura.AsignarCitaFactura(1, 1);
             var factura = _repoFactura.GetFactura(1);
-            var cita = _repoCita.GetCita(1);            
+            var cita = _repoCita.GetCita(1);
             Console.WriteLine("La cita: " + cita.Id + " quedó asignada a la factura: " + factura.Id);
-        }    
+        }
     }
 }

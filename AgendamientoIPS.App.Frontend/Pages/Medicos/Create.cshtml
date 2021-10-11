@@ -2,45 +2,56 @@
 @using AgendamientoIPS.App.Dominio
 @model AgendamientoIPS.App.Frontend.Pages.Medicos.CreateModel
 @{
+    ViewData["Title"] = "Crear Médico";
 }
+<br>
 <h1>Nuevo Médico</h1>
 <form method="post">
     <div class="form-group">
-        <label asp-for="medico.Nombre">Nombre</label>
+        <label asp-for="medico.Nombre"></label>
         <input asp-for="medico.Nombre" class="form-control">
+        <span asp-validation-for = "medico.Nombre" class = "text-danger"></span>        
     </div>
     <div class="form-group">
-        <label asp-for="medico.PrimerApellido">Primer Apellido</label>
+        <label asp-for="medico.PrimerApellido"></label>
         <input asp-for="medico.PrimerApellido" class="form-control">
+        <span asp-validation-for = "medico.PrimerApellido" class = "text-danger"></span>        
     </div>
     <div class="form-group">
-        <label asp-for="medico.SegundoApellido">Segundo Apellido</label>
+        <label asp-for="medico.SegundoApellido"></label>
         <input asp-for="medico.SegundoApellido" class="form-control">
+        <span asp-validation-for = "medico.SegundoApellido" class = "text-danger"></span>        
     </div>
     <div class="form-group">
-        <label asp-for="medico.Direccion">Dirección</label>
+        <label asp-for="medico.Direccion"></label>
         <input asp-for="medico.Direccion" class="form-control">
+        <span asp-validation-for = "medico.Direccion" class = "text-danger"></span>        
     </div>
     <div class="form-group">
-        <label asp-for="medico.Telefono">Teléfono</label>
+        <label asp-for="medico.Telefono"></label>
         <input asp-for="medico.Telefono" class="form-control">
+        <span asp-validation-for = "medico.Telefono" class = "text-danger"></span>        
     </div>
     <div class="form-group">
-        <label asp-for="medico.Correo">Correo Electrónico</label>
+        <label asp-for="medico.Correo"></label>
         <input asp-for="medico.Correo" class="form-control">
+        <span asp-validation-for = "medico.Correo" class = "text-danger"></span>        
     </div>
     <div class="form-group">
-        <label asp-for="medico.TarjetaProfesional">Tarjeta Profesional</label>
+        <label asp-for="medico.TarjetaProfesional"></label>
         <input asp-for="medico.TarjetaProfesional" class="form-control">
+        <span asp-validation-for = "medico.TarjetaProfesional" class = "text-danger"></span>        
     </div>
     <div class="form-group">
-        <label asp-for="medico.Especialidad">Especialidad</label>
+        <label asp-for="medico.Especialidad"></label>
         <input asp-for="medico.Especialidad" class="form-control">
+        <span asp-validation-for = "medico.Especialidad" class = "text-danger"></span>        
     </div>
     <div class="form-group">
         <label asp-for="medico.EPS">EPS</label>
         <select asp-for="medico.EPS" asp-items="Html.GetEnumSelectList<EPS>()" class="form-control"></select>
     </div>
-    <button type="submit" class="btn btn-primary">Crear Médico</button>
+    <button type="submit" class="btn btn-success">Crear Médico</button>
 </form>
+<br>
 <a class="btn btn-secondary" asp-page="./Index">Volver</a>

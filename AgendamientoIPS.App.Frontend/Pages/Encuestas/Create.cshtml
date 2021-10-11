@@ -2,12 +2,15 @@
 @using AgendamientoIPS.App.Dominio
 @model AgendamientoIPS.App.Frontend.Pages.Encuestas.CreateModel
 @{
+    ViewData["Title"] = "Crear Encuesta";
 }
+<br>
 <h1>Nueva Encuesta</h1>
 <form method="post">
     <div class="form-group">
-        <label asp-for="encuesta.AntecedentesMedicos">Antecedentes Médicos</label>
+        <label asp-for="encuesta.AntecedentesMedicos"></label>
         <input asp-for="encuesta.AntecedentesMedicos" class="form-control">
+        <span asp-validation-for = "encuesta.AntecedentesMedicos" class = "text-danger"></span>        
     </div>
     <div class="form-group">
         <label asp-for="encuesta.MotivoConsulta"></label>
@@ -17,6 +20,7 @@
         <label asp-for="encuesta.Observaciones"></label>
         <input asp-for="encuesta.Observaciones" class="form-control">
     </div>
-    <button type="submit" class="btn btn-primary">Crear Encuesta</button>
+    <button type="submit" class="btn btn-success">Crear Encuesta</button>
 </form>
+<br>
 <a class="btn btn-secondary" asp-page="./Index">Volver</a>

@@ -1,7 +1,9 @@
 ﻿@page
 @model AgendamientoIPS.App.Frontend.Pages.Facturas.DetailsModel
 @{
+    ViewData["Title"] = "Detalles de Factura";
 }
+<br>
 <h1>Detalles de Factura</h1>
 <table class="table table-borderless table-secondary">
     <tr>
@@ -10,7 +12,7 @@
     </tr>
     <tr>
         <th scope="col">Fecha de Factura</th>
-        <td>@Model.factura.FechaFactura</td>
+        <td>@Model.factura.FechaFactura.ToString("dd/MM/yyyy")</td>
     </tr>
     <tr>
         <th scope="col">Concepto</th>
@@ -37,4 +39,4 @@
         <td>@Model.factura.Cita</td>
     </tr>
 </table>
-<a class="btn btn-primary" asp-page="./Index">Volver</a>
+<a class="btn btn-secondary" asp-page="./Index">Volver</a>

@@ -2,7 +2,9 @@
 @using AgendamientoIPS.App.Dominio
 @model AgendamientoIPS.App.Frontend.Pages.Sedes.EditModel
 @{
+    ViewData["Title"] = "Editar Sede";
 }
+<br>
 <h1>Editar Sede</h1>
 <form method="post">
     <div class="form-group">
@@ -10,33 +12,42 @@
         <input asp-for="sede.Id" class="form-control" readonly>
     </div>    
     <div class="form-group">
-        <label asp-for="sede.Nit">NIT</label>
+        <label asp-for="sede.Nit"></label>
         <input asp-for="sede.Nit" class="form-control">
+        <span asp-validation-for = "sede.Nit" class = "text-danger"></span>        
+
     </div>
     <div class="form-group">
-        <label asp-for="sede.Ciudad">Ciudad</label>
+        <label asp-for="sede.Ciudad"></label>
         <select asp-for="sede.Ciudad" asp-items="Html.GetEnumSelectList<Ciudad>()" class="form-control"></select>
     </div>
     <div class="form-group">
-        <label asp-for="sede.Direccion">Dirección</label>
+        <label asp-for="sede.Direccion"></label>
         <input asp-for="sede.Direccion" class="form-control">
+        <span asp-validation-for = "sede.Direccion" class = "text-danger"></span>        
+
     </div>
     <div class="form-group">
-        <label asp-for="sede.Telefono">Teléfono</label>
+        <label asp-for="sede.Telefono"></label>
         <input asp-for="sede.Telefono" class="form-control">
+        <span asp-validation-for = "sede.Telefono" class = "text-danger"></span>        
+
     </div>
     <div class="form-group">
-        <label asp-for="sede.NombreSede">Nombre de la Sede</label>
+        <label asp-for="sede.NombreSede"></label>
         <select asp-for="sede.NombreSede" asp-items="Html.GetEnumSelectList<NombreSede>()" class="form-control"></select>
     </div>
     <div class="form-group">
-        <label asp-for="sede.HorarioAtencion">Horario de Atención</label>
+        <label asp-for="sede.HorarioAtencion"></label>
         <select asp-for="sede.HorarioAtencion" asp-items="Html.GetEnumSelectList<HorarioAtencion>()" class="form-control"></select>
     </div>
     <div class="form-group">
-        <label asp-for="sede.Ubicacion">Ubicación</label>
+        <label asp-for="sede.Ubicacion"></label>
         <input asp-for="sede.Ubicacion" class="form-control">
+        <span asp-validation-for = "sede.Ubicacion" class = "text-danger"></span>        
+
     </div>
-    <button type="submit" class="btn btn-primary">Crear Sede</button>
+    <button type="submit" class="btn btn-success">Editar Sede</button>
 </form>
+<br>
 <a class="btn btn-secondary" asp-page="./Index">Volver</a>

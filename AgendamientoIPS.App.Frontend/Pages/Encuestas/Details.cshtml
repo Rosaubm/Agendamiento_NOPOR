@@ -1,7 +1,9 @@
 ﻿@page
 @model AgendamientoIPS.App.Frontend.Pages.Encuestas.DetailsModel
 @{
+    ViewData["Title"] = "Detalles de la Encuesta";
 }
+<br>
 <h1>Detalles de la Encuesta</h1>
 <table class="table table-borderless table-secondary">
     <tr>
@@ -17,4 +19,4 @@
         <td>@Model.encuesta.Observaciones</td>
     </tr>
 </table>
-<a class="btn btn-primary" asp-page="./Index">Volver</a>
+<a class="btn btn-secondary" asp-page="./Index">Volver</a>
