@@ -46,7 +46,6 @@ namespace AgendamientoIPS.App.Persistencia
                 sedeEncontrado.Telefono = sede.Telefono;
                 sedeEncontrado.NombreSede = sede.NombreSede;
                 sedeEncontrado.HorarioAtencion = sede.HorarioAtencion;
-                sedeEncontrado.Ubicacion = sede.Ubicacion;
                 
                 _appContext.SaveChanges();
             }

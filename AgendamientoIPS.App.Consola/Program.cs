@@ -142,8 +142,7 @@ namespace AgendamientoIPS.App.Consola
                 Direccion = "Carrera 1, Calle 1 #1-1",
                 Telefono = "(111) 111-1111",
                 NombreSede = NombreSede.General,
-                HorarioAtencion = HorarioAtencion.EPS,
-                Ubicacion = 0,
+                HorarioAtencion = HorarioAtencion.EPS
             };
             _repoSede.AddSede(sede);
         }

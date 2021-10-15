@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "x0V144vZZURfEQacc+y+eX7dQr1RK19uJzj+u3QSKFvPryS0pBW/blLE7fmvHwqmOyD5btRhAN6GBSwCU5MMog==",
+  "dgSpecHash": "pMlrzaTmUL6JzwMbNR79/wazfjvmuVoiGVdsgk0OAqv7PhFJ7okJe3etBfL1/IIv4uCXmNxMF+4sARVvUyX70g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\usuario\\Desktop\\Agendamiento\\Agendamiento_NOPOR\\AgendamientoIPS.App.Dominio\\AgendamientoIPS.App.Dominio.csproj",
+  "projectFilePath": "D:\\USUARIO\\Desktop\\agendamiento\\Agendamiento_NOPOR\\AgendamientoIPS.App.Dominio\\AgendamientoIPS.App.Dominio.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\usuario\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\usuario\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -27,7 +27,9 @@ namespace AgendamientoIPS.App.Persistencia.Migrations
                         .UseIdentityColumn();
 
                     b.Property<string>("Especialidad")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<DateTime>("Fecha")
                         .HasColumnType("datetime2");
@@ -75,7 +77,9 @@ namespace AgendamientoIPS.App.Persistencia.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("NumConvenio")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(8)
+                        .HasColumnType("nvarchar(8)");
 
                     b.HasKey("Id");
 
@@ -90,6 +94,7 @@ namespace AgendamientoIPS.App.Persistencia.Migrations
                         .UseIdentityColumn();
 
                     b.Property<string>("AntecedentesMedicos")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("MotivoConsulta")
@@ -114,13 +119,17 @@ namespace AgendamientoIPS.App.Persistencia.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Concepto")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<DateTime>("FechaFactura")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("FormadePago")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<int?>("IdConvenioId")
                         .HasColumnType("int");
@@ -151,10 +160,14 @@ namespace AgendamientoIPS.App.Persistencia.Migrations
                         .UseIdentityColumn();
 
                     b.Property<string>("Correo")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("Direccion")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("Discriminator")
                         .IsRequired()
@@ -164,16 +177,24 @@ namespace AgendamientoIPS.App.Persistencia.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Nombre")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("PrimerApellido")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("SegundoApellido")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("Telefono")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("Id");
 
@@ -193,18 +214,23 @@ namespace AgendamientoIPS.App.Persistencia.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Direccion")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<int>("HorarioAtencion")
                         .HasColumnType("int");
 
                     b.Property<string>("Nit")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(11)
+                        .HasColumnType("nvarchar(11)");
 
                     b.Property<int>("NombreSede")
                         .HasColumnType("int");
 
                     b.Property<string>("Telefono")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -217,10 +243,14 @@ namespace AgendamientoIPS.App.Persistencia.Migrations
                     b.HasBaseType("AgendamientoIPS.App.Dominio.Persona");
 
                     b.Property<string>("Especialidad")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("TarjetaProfesional")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
 
                     b.HasDiscriminator().HasValue("Medico");
                 });

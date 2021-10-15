@@ -196,3 +196,13 @@ C:\Users\usuario\Desktop\Agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Fro
 C:\Users\usuario\Desktop\Agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Frontend\obj\Debug\netcoreapp3.1\AgendamientoIPS.App.Frontend.dll
 C:\Users\usuario\Desktop\Agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Frontend\obj\Debug\netcoreapp3.1\AgendamientoIPS.App.Frontend.pdb
 C:\Users\usuario\Desktop\Agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Frontend\obj\Debug\netcoreapp3.1\AgendamientoIPS.App.Frontend.genruntimeconfig.cache
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Citas\Edit.cshtml.g.cs
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Convenios\Edit.cshtml.g.cs
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Encuestas\Create.cshtml.g.cs
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Encuestas\Details.cshtml.g.cs
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Encuestas\Edit.cshtml.g.cs
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Encuestas\Index.cshtml.g.cs
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Facturas\Edit.cshtml.g.cs
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Medicos\Edit.cshtml.g.cs
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Pacientes\Edit.cshtml.g.cs
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Sedes\Edit.cshtml.g.cs
