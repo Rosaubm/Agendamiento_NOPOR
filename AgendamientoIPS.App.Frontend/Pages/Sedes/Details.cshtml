@@ -1,9 +1,11 @@
 ﻿@page
 @model AgendamientoIPS.App.Frontend.Pages.Sedes.DetailsModel
 @{
+    ViewData["Title"] = "Detalles de la Sede";
 }
-<h1>Detalles de Sede</h1>
-<table class="table table-dark">
+<br>
+<h1>Detalles de la Sede</h1>
+<table class="table table-borderless table-secondary">
     <tr>
         <th scope="col">Nit</th>
         <td>@Model.sede.Nit</td>
@@ -29,5 +31,4 @@
         <td>@Model.sede.HorarioAtencion</td>
     </tr>
 </table>
-<a class="btn btn-primary" asp-page="./Index">Volver</a>
-
+<a class="btn btn-secondary" asp-page="./Index">Volver</a>

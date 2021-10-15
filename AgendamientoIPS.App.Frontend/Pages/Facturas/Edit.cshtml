@@ -1,0 +1,45 @@
+﻿@page
+@model AgendamientoIPS.App.Frontend.Pages.Facturas.EditModel
+@{
+    ViewData["Title"] = "Editar Factura";
+}
+<br>
+<h1>Editar Factura</h1>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="factura.Id"></label>
+        <input asp-for="factura.Id" class="form-control" readonly>
+    </div>        
+    <div class="form-group">
+        <label asp-for="factura.NumFactura"></label>
+        <input asp-for="factura.NumFactura" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="factura.FechaFactura"></label>
+        <input asp-for="factura.FechaFactura" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="factura.Concepto"></label>
+        <input asp-for="factura.Concepto" class="form-control">
+        <span asp-validation-for = "factura.Concepto" class = "text-danger"></span>        
+    </div>
+    <div class="form-group">
+        <label asp-for="factura.TarifaAplicada"></label>
+        <input asp-for="factura.TarifaAplicada" class="form-control">
+        <span asp-validation-for = "factura.TarifaAplicada" class = "text-danger"></span>        
+    </div>
+    <div class="form-group">
+        <label asp-for="factura.ValorPagado"></label>
+        <input asp-for="factura.ValorPagado" class="form-control">
+        <span asp-validation-for = "factura.ValorPagado" class = "text-danger"></span>        
+    </div>
+    <div class="form-group">
+        <label asp-for="factura.FormadePago"></label>
+        <input asp-for="factura.FormadePago" class="form-control">
+        <span asp-validation-for = "factura.FormadePago" class = "text-danger"></span>        
+    </div>
+    <button type="submit" class="btn btn-success">Editar Factura</button>
+</form>
+<br>
+<a class="btn btn-secondary" asp-page="./Index">Volver</a>
+

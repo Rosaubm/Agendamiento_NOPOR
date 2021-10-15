@@ -18,13 +18,13 @@ namespace AgendamientoIPS.App.Consola
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            AddPaciente();
-            AddMedico();
-            AddEncuesta();
-            AddCita();
-            AddSede();
-            AddConvenio();
-            AddFactura();
+            //AddPaciente();
+            //AddMedico();
+            //AddEncuesta();
+            //AddCita();
+            //AddSede();
+            //AddConvenio();
+            //AddFactura();
             //BuscarPaciente(2);
             //MostrarPacientes();
             //BuscarMedico(3);
@@ -41,12 +41,12 @@ namespace AgendamientoIPS.App.Consola
         {
             var paciente = new Paciente
             {
-                Nombre = "Yostin",
+                Nombre = "Ginger",
                 PrimerApellido = "Morgan",
-                SegundoApellido = "Martinez",
-                Direccion = "ABC Box 666, 8161 Street Avenue",
-                Telefono = "(411) 111-1111",
-                Correo = "lorem.primis@justosit.org",
+                SegundoApellido = "Chen",
+                Direccion = "P.O. Box 554, 8161 Donec Avenue",
+                Telefono = "(484) 513-4027",
+                Correo = "ipsum.primis@justosit.org",
                 EPS = EPS.Ninguna
             };
             _repoPaciente.AddPaciente(paciente);
@@ -71,15 +71,15 @@ namespace AgendamientoIPS.App.Consola
         {
             var medico = new Medico
             {
-                Nombre = "Tashya",
-                PrimerApellido = "Pate",
-                SegundoApellido = "Lucas",
-                Direccion = "Ap #860-8492 Sapien, St.",
-                Telefono = "(421) 925-4922",
-                Correo = "facilisis.eget@eu.com",
-                EPS = EPS.NuevaEPS,
-                TarjetaProfesional = "TP-1417525",
-                Especialidad = "Reumatología"
+                Nombre = "Mira",
+                PrimerApellido = "Bridges",
+                SegundoApellido = "Hobbs",
+                Direccion = "P.O. Box 170, 3086 Vulputate Street",
+                Telefono = "(237) 420-1433",
+                Correo = "suspendisse@dignissimpharetranam.ca",
+                EPS = EPS.Sanitas,
+                TarjetaProfesional = "TP-0142213",
+                Especialidad = "Hepatología"
             };
             _repoMedico.AddMedico(medico);
         }
@@ -103,9 +103,9 @@ namespace AgendamientoIPS.App.Consola
         {
             var encuesta = new Encuesta
             {
-                AntecedentesMedicos = "Hipertensión",
+                AntecedentesMedicos = "cursus a, enim. Suspendisse aliquet, sem ut cursus luctus, ipsum leo elementum sem, vitae aliquam eros turpis non enim. Mauris quis turpis vitae purus gravida sagittis. Duis gravida. Praesent eu nulla at sem molestie sodales. Mauris blandit enim consequat purus. Maecenas libero est, congue a, aliquet vel, vulputate eu, odio.",
                 MotivoConsulta = MotivoConsulta.Revisión,
-                Observaciones = "Siente calor en todo el cuerpo, mareos y dolor de cabeza"
+                Observaciones = "a feugiat tellus lorem eu metus. In lorem. Donec elementum, lorem ut aliquam iaculis, lacus pede sagittis augue, eu tempor erat neque non quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam fringilla cursus purus. Nullam scelerisque neque sed sem egestas blandit. Nam nulla"
             };
             _repoEncuesta.AddEncuesta(encuesta);
         }
@@ -142,7 +142,8 @@ namespace AgendamientoIPS.App.Consola
                 Direccion = "Carrera 1, Calle 1 #1-1",
                 Telefono = "(111) 111-1111",
                 NombreSede = NombreSede.General,
-                HorarioAtencion = HorarioAtencion.EPS
+                HorarioAtencion = HorarioAtencion.EPS,
+                Ubicacion = 0,
             };
             _repoSede.AddSede(sede);
         }

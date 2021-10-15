@@ -23,8 +23,15 @@ namespace AgendamientoIPS.App.Frontend.Pages.Facturas
         }
         public IActionResult OnPost(Factura factura)
         {
-            _repoFactura.AddFactura(factura);
-            return RedirectToPage("Index");
+            if (ModelState.IsValid)
+            {
+                _repoFactura.AddFactura(factura);
+                return RedirectToPage("Index");
+            }
+            else
+            {
+                return Page();
+            }
         }
     }
 }

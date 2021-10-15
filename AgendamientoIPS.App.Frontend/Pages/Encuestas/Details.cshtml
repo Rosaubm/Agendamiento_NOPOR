@@ -1,0 +1,23 @@
+﻿@page
+@model AgendamientoIPS.App.Frontend.Pages.Encuestas.DetailsModel
+@{
+    ViewData["Title"] = "Detalles de la Encuesta";
+}
+<br>
+<h1>Detalles de la Encuesta</h1>
+<table class="table table-borderless table-secondary">
+    <tr>
+        <th scope="col">Antecedentes Médicos</th>
+        <td>@Model.encuesta.AntecedentesMedicos</td>
+    </tr>
+    <tr>
+        <th scope="col">Motivo de la Consulta</th>
+        <td>@Model.encuesta.MotivoConsulta</td>
+    </tr>
+    <tr>
+        <th scope="col">Observaciones</th>
+        <td>@Model.encuesta.Observaciones</td>
+    </tr>
+</table>
+<a class="btn btn-secondary" asp-page="./Index">Volver</a>
+

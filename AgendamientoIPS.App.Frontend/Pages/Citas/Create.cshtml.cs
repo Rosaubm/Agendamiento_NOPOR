@@ -23,8 +23,15 @@ namespace AgendamientoIPS.App.Frontend.Pages.Citas
         }
         public IActionResult OnPost(Cita cita)
         {
-            _repoCita.AddCita(cita);
-            return RedirectToPage("Index");
+            if (ModelState.IsValid)
+            {
+                _repoCita.AddCita(cita);
+                return RedirectToPage("Index");
+            }
+            else
+            {
+                return Page();
+            }
         }
     }
 }

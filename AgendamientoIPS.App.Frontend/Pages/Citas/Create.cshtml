@@ -1,29 +1,34 @@
 ﻿@page
+@using AgendamientoIPS.App.Dominio
 @model AgendamientoIPS.App.Frontend.Pages.Citas.CreateModel
 @{
+    ViewData["Title"] = "Crear Cita";
 }
+<br>
 <h1>Nueva Cita</h1>
 <form method="post">
     <div class="form-group">
-        <label asp-for="cita.TipoCita">Tipo de Cita</label>
-        <input asp-for="cita.TipoCita" class="form-control">
+        <label asp-for="cita.TipoCita"></label>
+        <select asp-for="cita.TipoCita" asp-items="Html.GetEnumSelectList<TipoCita>()" class="form-control"></select>
     </div>
     <div class="form-group">
-        <label asp-for="cita.NumCita">Número de Cita</label>
+        <label asp-for="cita.NumCita"></label>
         <input asp-for="cita.NumCita" class="form-control">
     </div>
     <div class="form-group">
         <label asp-for="cita.Especialidad"></label>
         <input asp-for="cita.Especialidad" class="form-control">
+        <span asp-validation-for = "cita.Especialidad" class = "text-danger"></span>
     </div>
     <div class="form-group">
         <label asp-for="cita.Hora"></label>
-        <input asp-for="cita.Hora" class="form-control">
+        <input type="time" asp-for="cita.Hora" class="form-control">
     </div>
     <div class="form-group">
         <label asp-for="cita.Fecha"></label>
-        <input asp-for="cita.Fecha" class="form-control">
+        <input type="date" asp-for="cita.Fecha" class="form-control">
     </div>
-    <button type="submit" class="btn btn-primary">Crear Cita</button>
+    <button type="submit" class="btn btn-success">Crear Cita</button>
 </form>
+<br>
 <a class="btn btn-secondary" asp-page="./Index">Volver</a>

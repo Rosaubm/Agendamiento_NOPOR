@@ -23,8 +23,16 @@ namespace AgendamientoIPS.App.Frontend.Pages.Medicos
         }
         public IActionResult OnPost(Medico medico)
         {
-            _repoMedico.AddMedico(medico);
-            return RedirectToPage("Index");
+            if (ModelState.IsValid)
+            {
+                _repoMedico.AddMedico(medico);
+                return RedirectToPage("Index");
+            }
+            else
+            {
+                return Page();
+            }
         }
     }
 }
+
