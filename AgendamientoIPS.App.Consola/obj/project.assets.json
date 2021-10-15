@@ -1512,6 +1512,9 @@
       "AgendamientoIPS.App.Dominio/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "System.ComponentModel.Annotations": "5.0.0"
+        },
         "compile": {
           "bin/placeholder/AgendamientoIPS.App.Dominio.dll": {}
         },
@@ -5797,19 +5800,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\usuario\\.nuget\\packages\\": {}
+    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\usuario\\Desktop\\Agendamiento\\Agendamiento_NOPOR\\AgendamientoIPS.App.Consola\\AgendamientoIPS.App.Consola.csproj",
+      "projectUniqueName": "D:\\USUARIO\\Desktop\\agendamiento\\Agendamiento_NOPOR\\AgendamientoIPS.App.Consola\\AgendamientoIPS.App.Consola.csproj",
       "projectName": "AgendamientoIPS.App.Consola",
-      "projectPath": "C:\\Users\\usuario\\Desktop\\Agendamiento\\Agendamiento_NOPOR\\AgendamientoIPS.App.Consola\\AgendamientoIPS.App.Consola.csproj",
-      "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\usuario\\Desktop\\Agendamiento\\Agendamiento_NOPOR\\AgendamientoIPS.App.Consola\\obj\\",
+      "projectPath": "D:\\USUARIO\\Desktop\\agendamiento\\Agendamiento_NOPOR\\AgendamientoIPS.App.Consola\\AgendamientoIPS.App.Consola.csproj",
+      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+      "outputPath": "D:\\USUARIO\\Desktop\\agendamiento\\Agendamiento_NOPOR\\AgendamientoIPS.App.Consola\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -5820,11 +5823,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\usuario\\Desktop\\Agendamiento\\Agendamiento_NOPOR\\AgendamientoIPS.App.Dominio\\AgendamientoIPS.App.Dominio.csproj": {
-              "projectPath": "C:\\Users\\usuario\\Desktop\\Agendamiento\\Agendamiento_NOPOR\\AgendamientoIPS.App.Dominio\\AgendamientoIPS.App.Dominio.csproj"
+            "D:\\USUARIO\\Desktop\\agendamiento\\Agendamiento_NOPOR\\AgendamientoIPS.App.Dominio\\AgendamientoIPS.App.Dominio.csproj": {
+              "projectPath": "D:\\USUARIO\\Desktop\\agendamiento\\Agendamiento_NOPOR\\AgendamientoIPS.App.Dominio\\AgendamientoIPS.App.Dominio.csproj"
             },
-            "C:\\Users\\usuario\\Desktop\\Agendamiento\\Agendamiento_NOPOR\\AgendamientoIPS.App.Persistencia\\AgendamientoIPS.App.Persistencia.csproj": {
-              "projectPath": "C:\\Users\\usuario\\Desktop\\Agendamiento\\Agendamiento_NOPOR\\AgendamientoIPS.App.Persistencia\\AgendamientoIPS.App.Persistencia.csproj"
+            "D:\\USUARIO\\Desktop\\agendamiento\\Agendamiento_NOPOR\\AgendamientoIPS.App.Persistencia\\AgendamientoIPS.App.Persistencia.csproj": {
+              "projectPath": "D:\\USUARIO\\Desktop\\agendamiento\\Agendamiento_NOPOR\\AgendamientoIPS.App.Persistencia\\AgendamientoIPS.App.Persistencia.csproj"
             }
           }
         }
@@ -5860,7 +5863,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.412\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.413\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -19,9 +19,6 @@ namespace AgendamientoIPS.App.Dominio
         [Display(Name = "Teléfono")] 
         public string Telefono {get;set;} // Teléfono de Sede
         public NombreSede NombreSede {get;set;} // Nombre de la Sede
-        public HorarioAtencion HorarioAtencion {get;set;} // Horario de Atención 
-        [Required(ErrorMessage = "La Ubicación es obligatorio.")]       
-        [Display(Name = "Número de Ubicación")]         
-        public int Ubicacion {get;set;} // Ubicación de Sede 
+        public HorarioAtencion HorarioAtencion {get;set;} // Horario de Atención
     }
 }
