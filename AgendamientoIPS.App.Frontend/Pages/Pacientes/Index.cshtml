@@ -1,9 +1,17 @@
 ﻿@page
+@using AgendamientoIPS.App.Dominio 
 @model AgendamientoIPS.App.Frontend.Pages.Pacientes.IndexModel
 @{
+    ViewData["Title"] = "Pacientes";
 }
-<a class="btn btn-primary" asp-page="./Create">Nuevo Paciente</a>
-<h1>Listado de Pacientes</h1>
+<br>
+<table style="width: 100%;">
+    <tr style="width: 100%;">
+        <td style="width: 80%;"><h1>Listado de Pacientes</h1></td>
+        <td style="width: 20%;" text-align="right";><a class="btn btn-success" asp-page="./Create">Nuevo Paciente</a></td>
+    </tr>
+</table>
+
 <table class="table table-hover">
     <thead>
         <tr>
@@ -11,7 +19,7 @@
             <th scope="col">Primer Apellido</th>
             <th scope="col">Segundo Apellido</th>
             <th scope="col">Teléfono</th>
-            <th scope="col">Acciones</th>
+            <th style="width: 20%;" scope="col">Acciones</th>
         </tr>
     </thead>
     <tbody>
@@ -22,13 +30,11 @@
                 <td>@paciente.PrimerApellido</td>
                 <td>@paciente.SegundoApellido</td>
                 <td>@paciente.Telefono</td>
-                <td>
-                    <a class="btn btn-primary" asp-page="./Details" asp-route-id="@paciente.Id">
-                     Detalle
-                    </a>
-                    </td>
+                <td style="width: 20%;">
+                    <a class="btn btn-primary btn-sm" asp-page="./Details" asp-route-id="@paciente.Id">Detalle</a>
+                    <a class="btn btn-warning btn-sm" asp-page="./Edit" asp-route-id="@paciente.Id">Editar</a>
+                </td>
             </tr>
         }
     </tbody>
 </table>
-    

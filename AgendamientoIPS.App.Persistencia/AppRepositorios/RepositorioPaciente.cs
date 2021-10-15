@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 using AgendamientoIPS.App.Dominio;
 
 namespace AgendamientoIPS.App.Persistencia

@@ -1,0 +1,31 @@
+﻿@page
+@using AgendamientoIPS.App.Dominio
+@model AgendamientoIPS.App.Frontend.Pages.Convenios.EditModel
+@{
+    ViewData["Title"] = "Editar Convenio";
+}
+<br>
+<h1>Editar Convenio</h1>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="convenio.Id"></label>
+        <input asp-for="convenio.Id" class="form-control" readonly>
+    </div>        
+    <div class="form-group">
+        <label asp-for="convenio.NumConvenio"></label>
+        <input asp-for="convenio.NumConvenio" class="form-control">
+        <span asp-validation-for = "convenio.NumConvenio" class = "text-danger"></span>        
+    </div>
+    <div class="form-group">
+        <label asp-for="convenio.EPS"></label>
+        <select asp-for="convenio.EPS" asp-items="Html.GetEnumSelectList<EPS>()" class="form-control"></select>
+    </div>
+    <div class="form-group">
+        <label asp-for="convenio.Descuento"></label>
+        <input asp-for="convenio.Descuento" class="form-control">
+        <span asp-validation-for = "convenio.Descuento" class = "text-danger"></span>        
+    </div>
+    <button type="submit" class="btn btn-success">Editar Convenio</button>
+</form>
+<br>
+<a class="btn btn-secondary" asp-page="./Index">Volver</a>

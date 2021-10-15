@@ -25,12 +25,13 @@ namespace AgendamientoIPS.App.Frontend
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
-            services.AddSingleton<IRepositorioPaciente, RepositorioPaciente>();  //Instrucciòn para inyectar dependencia hacia cada modelo de pages
-            services.AddSingleton<IRepositorioMedico, RepositorioMedico>();      //Instrucciòn para inyectar dependencia hacia cada modelo de pages
-            services.AddSingleton<IRepositorioCita, RepositorioCita>();         //Instrucciòn para inyectar dependencia hacia cada modelo de pages
-            services.AddSingleton<IRepositorioFactura, RepositorioFactura>();   //Instrucciòn para inyectar dependencia hacia cada modelo de pages
-            services.AddSingleton<IRepositorioSede, RepositorioSede>();         //Instrucciòn para inyectar dependencia hacia cada modelo de pages
-            services.AddSingleton<IRepositorioConvenio, RepositorioConvenio>(); //Instrucciòn para inyectar dependencia hacia cada modelo de pages
+            services.AddSingleton<IRepositorioPaciente, RepositorioPaciente>();
+            services.AddSingleton<IRepositorioMedico, RepositorioMedico>();
+            services.AddSingleton<IRepositorioCita, RepositorioCita>();
+            services.AddSingleton<IRepositorioFactura, RepositorioFactura>();
+            services.AddSingleton<IRepositorioSede, RepositorioSede>();            
+            services.AddSingleton<IRepositorioConvenio, RepositorioConvenio>();   
+            services.AddSingleton<IRepositorioEncuesta, RepositorioEncuesta>();   
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

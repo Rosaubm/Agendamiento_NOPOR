@@ -1,17 +1,24 @@
 ﻿@page
 @model AgendamientoIPS.App.Frontend.Pages.Medicos.IndexModel
 @{
+    ViewData["Title"] = "Médicos";
 }
-<a class="btn btn-primary" asp-page="./Create">Crear Médico</a>
-<h1>Listado de Médicos</h1>
-<table class="table table-hover table-dark">
+<br>
+<table style="width: 100%;">
+    <tr style="width: 100%;">
+        <td style="width: 80%;"><h1>Listado de Médicos</h1></td>
+        <td style="width: 20%;" text-align="right";><a class="btn btn-success" asp-page="./Create">Nuevo Médico</a></td>
+    </tr>
+</table>
+
+<table class="table table-hover">
     <thead>
         <tr>
             <th scope="col">Especialidad</th>
             <th scope="col">Nombre</th>
             <th scope="col">Primer Apellido</th>
             <th scope="col">Segundo Apellido</th>
-            <th scope="col">Acciones</th>
+            <th style="width: 20%;" scope="col">Acciones</th>
         </tr>
     </thead>
     <tbody>
@@ -22,11 +29,10 @@
                 <td>@medico.Nombre</td>
                 <td>@medico.PrimerApellido</td>
                 <td>@medico.SegundoApellido</td>
-                <td>
-                    <a class="btn btn-primary" asp-page="./Details" asp-route-id="@medico.Id">
-                     Detalle
-                    </a>
-                    </td>
+                <td style="width: 20%;">
+                    <a class="btn btn-primary btn-sm" asp-page="./Details" asp-route-id="@medico.Id">Detalle</a>
+                    <a class="btn btn-warning btn-sm" asp-page="./Edit" asp-route-id="@medico.Id">Editar</a>
+                </td>
             </tr>
         }
     </tbody>

@@ -1,15 +1,22 @@
 ﻿@page
 @model AgendamientoIPS.App.Frontend.Pages.Convenios.IndexModel
 @{
+    ViewData["Title"] = "Convenios";
 }
-<a class="btn btn-secondary" asp-page="./Create">Nuevo Convenio</a>
-<h1>Listado de Convenios</h1>
-<table class="table table-striped">
+<br>
+<table style="width: 100%;">
+    <tr style="width: 100%;">
+        <td style="width: 80%;"><h1>Listado de Convenios</h1></td>
+        <td style="width: 20%;" text-align="right";><a class="btn btn-success" asp-page="./Create">Nuevo Convenio</a></td>
+    </tr>
+</table>
+
+<table class="table table-hover">
     <thead>
         <tr>
             <th scope="col">Convenio</th>
             <th scope="col">EPS</th>
-            <th scope="col">Acciones</th>
+            <th style="width: 20%;" scope="col">Acciones</th>
         </tr>
     </thead>
     <tbody>
@@ -18,10 +25,9 @@
             <tr>
                 <td>@convenio.NumConvenio</td>
                 <td>@convenio.EPS</td>
-                <td>
-                    <a class="btn btn-primary" asp-page="./Details" asp-route-id="@convenio.Id">
-                     Detalle
-                    </a>
+                <td style="width: 20%;">
+                    <a class="btn btn-primary btn-sm" asp-page="./Details" asp-route-id="@convenio.Id">Detalle</a>
+                    <a class="btn btn-warning btn-sm" asp-page="./Edit" asp-route-id="@convenio.Id">Editar</a>
                     </td>
             </tr>
         }
