@@ -11,7 +11,26 @@
         <td style="width: 20%;" text-align="right";><a class="btn btn-success" asp-page="./Create">Nuevo Paciente</a></td>
     </tr>
 </table>
-
+<br>
+<form method="get" classs="form-inline">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <label for="g"><h4>Seleccionar por EPS</h4></label>
+                <select class="custom-select" id="g" name="g" asp-items="Html.GetEnumSelectList<EPS>()" class="form-control" asp-for="@Model.gActual">
+                <option value="-1">Ver todos</option> 
+                </select>
+                <button type="submit" class="btn btn-primary my-1">Filtrar</button>
+            </div>        
+            <div class="col">
+                <label for = "b"><h4>Buscar por Nombre</h4></label>
+                <input type="text" class = "form-control" id = "b" name = "b" placeholder = "Texto de búsqueda..." asp-for = "@Model.bActual">
+                <button type="submit" class = "btn btn-primary my-1">Buscar</button>
+            </div>
+        </div>
+    </div>
+</form> 
+<br>
 <table class="table table-hover">
     <thead>
         <tr>

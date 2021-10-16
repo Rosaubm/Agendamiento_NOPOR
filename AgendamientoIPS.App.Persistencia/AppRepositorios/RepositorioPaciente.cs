@@ -73,5 +73,18 @@ namespace AgendamientoIPS.App.Persistencia
             }
         return null;
         }
+
+        IEnumerable<Paciente> IRepositorioPaciente.GetPacientesEPS(int eps)
+        {
+            return _appContext.Pacientes
+                    .Where(p => p.EPS ==(EPS)eps)
+                    .ToList();
+        }
+
+        IEnumerable<Paciente> IRepositorioPaciente.SearchPacientes(string nombre)
+        {
+            return _appContext.Pacientes
+                    .Where(p => p.Nombre.Contains(nombre));
+        }
     }
 }

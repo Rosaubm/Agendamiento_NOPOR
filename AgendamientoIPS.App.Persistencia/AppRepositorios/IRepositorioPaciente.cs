@@ -10,6 +10,8 @@ namespace AgendamientoIPS.App.Persistencia
         Paciente UpdatePaciente(Paciente paciente);
         void DeletePaciente(int idPaciente);
         Paciente GetPaciente(int idPaciente);
-        Encuesta AsignarEncuesta(int idPaciente, int idEncuesta);           
+        Encuesta AsignarEncuesta(int idPaciente, int idEncuesta);  
+        IEnumerable<Paciente> GetPacientesEPS(int eps);                 
+        IEnumerable<Paciente> SearchPacientes(string nombre);     
     }
 }
