@@ -13,6 +13,7 @@ namespace AgendamientoIPS.App.Frontend.Pages.Medicos
     {
         private readonly IRepositorioMedico _repoMedico;
         public IEnumerable<Medico> medicos {get;set;}
+        
         public IndexModel(IRepositorioMedico repoMedico)
         {
             _repoMedico = repoMedico;

@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AgendamientoIPS.App.Persistencia.Migrations
 {
     [DbContext(typeof(AppContext))]
-    [Migration("20211015212410_Inicial")]
+    [Migration("20211016033144_Inicial")]
     partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

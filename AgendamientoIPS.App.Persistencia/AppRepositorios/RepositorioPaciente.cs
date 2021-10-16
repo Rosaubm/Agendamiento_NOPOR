@@ -69,5 +69,11 @@ namespace AgendamientoIPS.App.Persistencia
             }
         return null;
         }
+    
+        public IEnumerable<Paciente> GetPacientesGenero(int genero)
+         
+         => _appContext.Pacientes
+                        .Where(p->p.Genero == (Genero)genero)
+                        .ToList();
     }
 }
