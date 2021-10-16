@@ -47,5 +47,6 @@ namespace AgendamientoIPS.App.Persistencia
             }
             return medicoEncontrado;
         }
+
     }
 }

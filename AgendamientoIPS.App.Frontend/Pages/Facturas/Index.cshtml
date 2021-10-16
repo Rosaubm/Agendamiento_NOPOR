@@ -17,7 +17,7 @@
             <th scope="col">Número de Factura</th>
             <th scope="col">Fecha de Factura</th>
             <th scope="col">Concepto</th>
-            <th scope="col">Convenio</th>
+            <!--<th scope="col">Convenio</th>-->
             <th style="width: 20%;" scope="col">Acciones</th>
         </tr>
     </thead>
@@ -28,7 +28,7 @@
                 <td>@factura.NumFactura</td>
                 <td>@factura.FechaFactura.ToString("dd/MM/yyyy")</td>
                 <td>@factura.Concepto</td>
-                <td>@factura.IdConvenio</td>
+                <!--<td>@factura.IdConvenio</td>-->
                 <td style="width: 20%;">
                     <a class="btn btn-primary btn-sm" asp-page="./Details" asp-route-id="@factura.Id">Detalle</a>
                     <a class="btn btn-warning btn-sm" asp-page="./Edit" asp-route-id="@factura.Id">Editar</a>
