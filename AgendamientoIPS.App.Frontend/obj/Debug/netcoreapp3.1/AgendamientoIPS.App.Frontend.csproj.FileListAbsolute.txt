@@ -206,3 +206,9 @@ D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Frontend\
 D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Medicos\Edit.cshtml.g.cs
 D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Pacientes\Edit.cshtml.g.cs
 D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Sedes\Edit.cshtml.g.cs
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Pacientes\AddEncuesta.cshtml.g.cs
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Facturas\AddConvenio.cshtml.g.cs
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Facturas\AddCita.cshtml.g.cs
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Citas\AddMedico.cshtml.g.cs
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Citas\AddPaciente.cshtml.g.cs
+D:\USUARIO\Desktop\agendamiento\Agendamiento_NOPOR\AgendamientoIPS.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Citas\AddSede.cshtml.g.cs

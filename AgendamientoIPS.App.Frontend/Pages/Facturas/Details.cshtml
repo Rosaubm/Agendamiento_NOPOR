@@ -28,15 +28,40 @@
     </tr>
     <tr>
         <th scope="col">Convenio</th>
-        <td>@Model.factura.IdConvenio</td>
+        @if (Model.factura.IdConvenio == null)
+        {
+            <td>
+                <a class="btn btn-primary" asp-page="./AddConvenio" asp-route-id="@Model.factura.Id">Asignar Convenio</a>
+            </td>
+        }
+        else
+        {
+            <td>@Model.factura.IdConvenio.NumConvenio</td>
+        }
     </tr>
     <tr>
         <th scope="col">Descuento</th>
-        <td>@Model.factura.IdConvenio</td>
+        @if (Model.factura.IdConvenio == null)
+        {
+            <td></td>
+        }
+        else
+        {
+            <td>@Model.factura.IdConvenio.Descuento</td>
+        }
     </tr>
     <tr>
-        <th scope="col">Paciente</th>
-        <td>@Model.factura.Cita</td>
+        <th scope="col">Cita</th>
+        @if (Model.factura.Cita == null)
+        {
+            <td>
+                <a class="btn btn-primary" asp-page="./AddCita" asp-route-id="@Model.factura.Id">Asignar Cita</a>
+            </td>
+        }
+        else
+        {
+            <td>@Model.factura.Cita.NumCita</td>
+        }
     </tr>
 </table>
 <a class="btn btn-secondary" asp-page="./Index">Volver</a>

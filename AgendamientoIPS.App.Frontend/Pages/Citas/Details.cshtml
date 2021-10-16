@@ -28,47 +28,141 @@
     </tr>
     <tr>
         <th scope="col">Médico Asignado</th>
-        <td>@Model.cita.IdMedico</td>
+        @if (Model.cita.IdMedico == null)
+        {
+            <td>
+                <a class="btn btn-primary" asp-page="./AddMedico" asp-route-id="@Model.cita.Id">Asignar Médico</a>
+            </td>
+        }
+        else
+        {
+            <td>@Model.cita.IdMedico.Nombre</td>
+        }
     </tr>
     <tr>
         <th scope="col">Médico Primer Apellido</th>
-        <td>@Model.cita.IdMedico</td>
+        @if (Model.cita.IdMedico == null)
+        {
+            <td></td>
+        }
+        else
+        {
+            <td>@Model.cita.IdMedico.PrimerApellido</td>
+        }
     </tr>
     <tr>
         <th scope="col">Médico Segundo Apellido</th>
-        <td>@Model.cita.IdMedico</td>
+        @if (Model.cita.IdMedico == null)
+        {
+            <td></td>
+        }
+        else
+        {
+            <td>@Model.cita.IdMedico.SegundoApellido</td>
+        }
     </tr>
     <tr>
         <th scope="col">Especialidad del Médico</th>
-        <td>@Model.cita.IdMedico</td>
+        @if (Model.cita.IdMedico == null)
+        {
+            <td></td>
+        }
+        else
+        {
+            <td>@Model.cita.IdMedico.Especialidad</td>
+        }
     </tr>
     <tr>
         <th scope="col">Tarjeta Profesional</th>
-        <td>@Model.cita.IdMedico</td>
+        @if (Model.cita.IdMedico == null)
+        {
+            <td></td>
+        }
+        else
+        {
+            <td>@Model.cita.IdMedico.TarjetaProfesional</td>
+        }
     </tr>
     <tr>
         <th scope="col">Paciente</th>
-        <td>@Model.cita.IdPaciente</td>
+        @if (Model.cita.IdPaciente == null)
+        {
+            <td>
+                <a class="btn btn-primary" asp-page="./AddPaciente" asp-route-id="@Model.cita.Id">Asignar Paciente</a>
+            </td>
+        }
+        else
+        {
+            <td>@Model.cita.IdPaciente.Nombre</td>
+        }
     </tr>
     <tr>
         <th scope="col">Paciente Primer Apellido</th>
-        <td>@Model.cita.IdPaciente</td>
+        @if (Model.cita.IdPaciente == null)
+        {
+            <td></td>
+        }
+        else
+        {
+            <td>@Model.cita.IdPaciente.PrimerApellido</td>
+        }
     </tr>
     <tr>
         <th scope="col">Paciente Segundo Apellido</th>
-        <td>@Model.cita.IdPaciente</td>
+        @if (Model.cita.IdPaciente == null)
+        {
+            <td></td>
+        }
+        else
+        {
+            <td>@Model.cita.IdPaciente.SegundoApellido</td>
+        }
     </tr>
     <tr>
         <th scope="col">Dirección</th>
-        <td>@Model.cita.IdPaciente</td>
+        @if (Model.cita.IdPaciente == null)
+        {
+            <td></td>
+        }
+        else
+        {
+            <td>@Model.cita.IdPaciente.Direccion</td>
+        }
     </tr>
     <tr>
         <th scope="col">Teléfono</th>
-        <td>@Model.cita.IdPaciente</td>
+        @if (Model.cita.IdPaciente == null)
+        {
+            <td></td>
+        }
+        else
+        {
+            <td>@Model.cita.IdPaciente.Telefono</td>
+        }
     </tr>
     <tr>
         <th scope="col">Correo Electrónico</th>
-        <td>@Model.cita.IdPaciente</td>
+        @if (Model.cita.IdPaciente == null)
+        {
+            <td></td>
+        }
+        else
+        {
+            <td>@Model.cita.IdPaciente.Correo</td>
+        }
+    </tr>
+    <tr>
+        <th scope="col">Sede</th>
+        @if (Model.cita.IdSede == null)
+        {
+            <td>
+                <a class="btn btn-primary" asp-page="./AddSede" asp-route-id="@Model.cita.Id">Asignar Sede</a>
+            </td> 
+        }
+        else
+        {
+            <td>@Model.cita.IdSede.NombreSede @Model.cita.IdSede.Ciudad</td>
+        }
     </tr>
 </table>
 <a class="btn btn-secondary" asp-page="./Index">Volver</a>

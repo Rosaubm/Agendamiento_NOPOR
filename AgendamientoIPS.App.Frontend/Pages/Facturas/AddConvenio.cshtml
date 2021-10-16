@@ -1,0 +1,22 @@
+﻿@page
+@model AgendamientoIPS.App.FrontEnd.Pages.Facturas.AddConvenioModel
+@{
+}
+<h1>Asignar Convenio</h1>
+<form method="post">
+    <div class="form-group">
+        <label for="idFactura">Factura</label>
+        <input type="text" id="idFactura" name="idFactura" class="form-control" value="@Model.factura.Id" readonly>
+    </div>
+    <div class="form-group">
+        <label for="idConvenio">Convenio</label>
+        <select name="idConvenio" id="idConvenio" class="form-control">
+            @foreach (var convenio in Model.convenios)
+            {
+                <option value="@convenio.Id">@convenio.NumConvenio</option>   
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Asignar Convenio</button>
+</form>
+<a class="btn btn-secondary" asp-page="./Index">Volver</a>

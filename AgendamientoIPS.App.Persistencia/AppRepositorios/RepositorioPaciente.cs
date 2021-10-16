@@ -33,7 +33,11 @@ namespace AgendamientoIPS.App.Persistencia
 
         Paciente IRepositorioPaciente.GetPaciente(int idPaciente)
         {
-            return _appContext.Pacientes.FirstOrDefault(p => p.Id == idPaciente);
+            var paciente = _appContext.Pacientes
+            .Where(p => p.Id == idPaciente)
+            .Include(p => p.Encuesta)
+            .FirstOrDefault();
+            return paciente;
         }
 
         Paciente IRepositorioPaciente.UpdatePaciente(Paciente paciente)
@@ -56,10 +60,10 @@ namespace AgendamientoIPS.App.Persistencia
 
         Encuesta IRepositorioPaciente.AsignarEncuesta(int idPaciente, int idEncuesta)
         { 
-            var pacienteEncontrado = _appContext.Pacientes.FirstOrDefault(p => p.Id == idPaciente);
+            var pacienteEncontrado = _appContext.Pacientes.Find(idPaciente);
             if (pacienteEncontrado != null)
             { 
-                var encuestaEncontrado = _appContext.Encuestas.FirstOrDefault(m => m.Id == idEncuesta);
+                var encuestaEncontrado = _appContext.Encuestas.Find(idEncuesta);
                 if (encuestaEncontrado != null)
                 { 
                     pacienteEncontrado.Encuesta = encuestaEncontrado;

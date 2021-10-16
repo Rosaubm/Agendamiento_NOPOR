@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using AgendamientoIPS.App.Dominio;
+using Microsoft.EntityFrameworkCore;
 
 namespace AgendamientoIPS.App.Persistencia
 {
@@ -18,7 +19,7 @@ namespace AgendamientoIPS.App.Persistencia
 
         void IRepositorioCita.DeleteCita(int idCita)
         {
-            var citaEncontrado = _appContext.Citas.FirstOrDefault(p => p.Id == idCita);
+            var citaEncontrado = _appContext.Citas.FirstOrDefault(c => c.Id == idCita);
             if (citaEncontrado == null)
                 return;
             _appContext.Citas.Remove(citaEncontrado);
@@ -32,12 +33,17 @@ namespace AgendamientoIPS.App.Persistencia
 
         Cita IRepositorioCita.GetCita(int idCita)
         {
-            return _appContext.Citas.FirstOrDefault(p => p.Id == idCita);
+            var cita = _appContext.Citas
+            .Where(c => c.Id == idCita)
+            .Include(c => c.IdPaciente)
+            .Include(c => c.IdMedico)
+            .Include(c => c.IdSede)
+            .FirstOrDefault();
+            return cita;
         }
-
         Cita IRepositorioCita.UpdateCita(Cita cita)
         {
-            var citaEncontrado = _appContext.Citas.FirstOrDefault(p => p.Id == cita.Id);
+            var citaEncontrado = _appContext.Citas.FirstOrDefault(c => c.Id == cita.Id);
             if (citaEncontrado != null)
             {
                 citaEncontrado.TipoCita = cita.TipoCita;
@@ -56,10 +62,10 @@ namespace AgendamientoIPS.App.Persistencia
 
         Paciente IRepositorioCita.AsignarCitaPaciente(int idCita, int idPaciente)
         { 
-            var citaEncontrado = _appContext.Citas.FirstOrDefault(c => c.Id == idCita);
+            var citaEncontrado = _appContext.Citas.Find(idCita);
             if (citaEncontrado != null)
             { 
-                var pacienteEncontrado = _appContext.Pacientes.FirstOrDefault(p => p.Id == idPaciente);
+                var pacienteEncontrado = _appContext.Pacientes.Find(idPaciente);
                 if (pacienteEncontrado != null)
                 { 
                     citaEncontrado.IdPaciente = pacienteEncontrado;
@@ -72,10 +78,10 @@ namespace AgendamientoIPS.App.Persistencia
 
         Medico IRepositorioCita.AsignarCitaMedico(int idCita, int idMedico)
         { 
-            var citaEncontrado = _appContext.Citas.FirstOrDefault(c => c.Id == idCita);
+            var citaEncontrado = _appContext.Citas.Find(idCita);
             if (citaEncontrado != null)
             { 
-                var medicoEncontrado = _appContext.Medicos.FirstOrDefault(m => m.Id == idMedico);
+                var medicoEncontrado = _appContext.Medicos.Find(idMedico);
                 if (medicoEncontrado != null)
                 { 
                     citaEncontrado.IdMedico = medicoEncontrado;
@@ -88,10 +94,10 @@ namespace AgendamientoIPS.App.Persistencia
 
         Sede IRepositorioCita.AsignarCitaSede(int idCita, int idSede)
         { 
-            var citaEncontrado = _appContext.Citas.FirstOrDefault(c => c.Id == idCita);
+            var citaEncontrado = _appContext.Citas.Find(idCita);
             if (citaEncontrado != null)
             { 
-                var sedeEncontrado = _appContext.Sedes.FirstOrDefault(s => s.Id == idSede);
+                var sedeEncontrado = _appContext.Sedes.Find(idSede);
                 if (sedeEncontrado != null)
                 { 
                     citaEncontrado.IdSede = sedeEncontrado;

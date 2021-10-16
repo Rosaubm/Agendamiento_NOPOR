@@ -1,0 +1,22 @@
+﻿@page
+@model AgendamientoIPS.App.FrontEnd.Pages.Citas.AddSedeModel
+@{
+}
+<h1>Asignar Sede</h1>
+<form method="post">
+    <div class="form-group">
+        <label for="idCita">Cita</label>
+        <input type="text" id="idCita" name="idCita" class="form-control" value="@Model.cita.Id" readonly>
+    </div>
+    <div class="form-group">
+        <label for="idSede">Sede</label>
+        <select name="idSede" id="idSede" class="form-control">
+            @foreach (var sede in Model.sedes)
+            {
+                <option value="@sede.Id">@sede.NombreSede @sede.Ciudad</option>
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Asignar Sede</button>
+</form>
+<a class="btn btn-secondary" asp-page="./Index">Volver</a>

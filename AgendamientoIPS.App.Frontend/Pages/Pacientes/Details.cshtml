@@ -34,5 +34,18 @@
         <th scope="col">EPS</th>
         <td>@Model.paciente.EPS</td>
     </tr>
+    <tr>
+        <th scope="col">Encuesta</th>
+        @if (Model.paciente.Encuesta == null)
+        {
+            <td>
+                <a class="btn btn-primary" asp-page="./AddEncuesta" asp-route-id="@Model.paciente.Id">Asignar Encuesta</a>
+            </td>
+        }
+        else
+        {
+            <td>@Model.paciente.Encuesta.Id</td>
+        }
+    </tr>
 </table>
 <a class="btn btn-secondary" asp-page="./Index">Volver</a>
