@@ -12,7 +12,7 @@ namespace AgendamientoIPS.App.Dominio
         public string AntecedentesMedicos {get;set;} // Antecedentes médicos del Paciente 
         [Display(Name = "Motivo de la Consulta")] 
         public MotivoConsulta MotivoConsulta {get;set;} // Motivo de consulta del Paciente
-        [Display(Name = "Observaciones (opcional)")]         
+        [Display(Name = "Observaciones + nombre Paciente")]         
         public string Observaciones {get;set;} // Observaciones del Paciente
     }
 }

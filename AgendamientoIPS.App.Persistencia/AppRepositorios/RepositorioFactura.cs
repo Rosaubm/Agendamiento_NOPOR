@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using AgendamientoIPS.App.Dominio;
+using Microsoft.EntityFrameworkCore;
 
 namespace AgendamientoIPS.App.Persistencia
 {
@@ -32,9 +33,13 @@ namespace AgendamientoIPS.App.Persistencia
 
         Factura IRepositorioFactura.GetFactura(int idFactura)
         {
-            return _appContext.Facturas.FirstOrDefault(f => f.Id == idFactura);
+            var factura = _appContext.Facturas
+                .Where(f => f.Id == idFactura)
+                .Include(f => f.IdConvenio)
+                .Include(f => f.Cita)
+                .FirstOrDefault();
+            return factura;
         }
-
         Factura IRepositorioFactura.UpdateFactura(Factura factura)
         {
             var facturaEncontrado = _appContext.Facturas.FirstOrDefault(f => f.Id == factura.Id);
@@ -55,10 +60,10 @@ namespace AgendamientoIPS.App.Persistencia
 
         Convenio IRepositorioFactura.AsignarConvenioFactura(int idFactura, int idConvenio)
         { 
-            var facturaEncontrado = _appContext.Facturas.FirstOrDefault(f => f.Id == idFactura);
+            var facturaEncontrado = _appContext.Facturas.Find(idFactura);
             if (facturaEncontrado != null)
             { 
-                var convenioEncontrado = _appContext.Convenios.FirstOrDefault(c => c.Id == idConvenio);
+                var convenioEncontrado = _appContext.Convenios.Find(idConvenio);
                 if (convenioEncontrado != null)
                 { 
                     facturaEncontrado.IdConvenio = convenioEncontrado;
@@ -71,10 +76,10 @@ namespace AgendamientoIPS.App.Persistencia
 
         Cita IRepositorioFactura.AsignarCitaFactura(int idFactura, int idCita)
         { 
-            var facturaEncontrado = _appContext.Facturas.FirstOrDefault(f => f.Id == idFactura);
+            var facturaEncontrado = _appContext.Facturas.Find(idFactura);
             if (facturaEncontrado != null)
             { 
-                var citaEncontrado = _appContext.Citas.FirstOrDefault(c => c.Id == idCita);
+                var citaEncontrado = _appContext.Citas.Find(idCita);
                 if (citaEncontrado != null)
                 { 
                     facturaEncontrado.Cita = citaEncontrado;

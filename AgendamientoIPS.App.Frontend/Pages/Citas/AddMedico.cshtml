@@ -1,0 +1,22 @@
+﻿@page
+@model AgendamientoIPS.App.FrontEnd.Pages.Citas.AddMedicoModel
+@{
+}
+<h1>Asignar Médico</h1>
+<form method="post">
+    <div class="form-group">
+        <label for="idCita">Cita</label>
+        <input type="text" id="idCita" name="idCita" class="form-control" value="@Model.cita.Id" readonly>
+    </div>
+    <div class="form-group">
+        <label for="idMedico">Médico</label>
+        <select name="idMedico" id="idMedico" class="form-control">
+            @foreach (var medico in Model.medicos)
+            {
+                <option value="@medico.Id">@medico.Nombre</option>
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Asignar Médico</button>
+</form>
+<a class="btn btn-secondary" asp-page="./Index">Volver</a>
