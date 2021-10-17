@@ -28,10 +28,13 @@
     </tr>
     <tr>
         <th scope="col">Médico Asignado</th>
-        @if (Model.cita.IdMedico == null)
+        @if (Model.cita.IdMedico == null) 
         {
             <td>
-                <a class="btn btn-primary" asp-page="./AddMedico" asp-route-id="@Model.cita.Id">Asignar Médico</a>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <a class="btn btn-primary" asp-page="./AddMedico" asp-route-id="@Model.cita.Id">Asignar Médico</a>
+                }    
             </td>
         }
         else
@@ -88,7 +91,10 @@
         @if (Model.cita.IdPaciente == null)
         {
             <td>
-                <a class="btn btn-primary" asp-page="./AddPaciente" asp-route-id="@Model.cita.Id">Asignar Paciente</a>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <a class="btn btn-primary" asp-page="./AddPaciente" asp-route-id="@Model.cita.Id">Asignar Paciente</a>
+                }
             </td>
         }
         else
@@ -156,7 +162,10 @@
         @if (Model.cita.IdSede == null)
         {
             <td>
-                <a class="btn btn-primary" asp-page="./AddSede" asp-route-id="@Model.cita.Id">Asignar Sede</a>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <a class="btn btn-primary" asp-page="./AddSede" asp-route-id="@Model.cita.Id">Asignar Sede</a>
+                }
             </td> 
         }
         else

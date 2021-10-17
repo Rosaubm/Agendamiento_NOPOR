@@ -7,7 +7,12 @@
 <table style="width: 100%;">
     <tr style="width: 100%;">
         <td style="width: 80%;"><h1>Facturación</h1></td>
-        <td style="width: 20%;" text-align="right";><a class="btn btn-success" asp-page="./Create">Nueva Factura</a></td>
+        <td style="width: 20%;" text-align="right";>
+            @if (User.Identity.IsAuthenticated)
+            {
+                <a class="btn btn-success" asp-page="./Create">Nueva Factura</a>
+            }
+        </td>
     </tr>
 </table>
 
@@ -31,7 +36,10 @@
                 <!--<td>@factura.IdConvenio</td>-->
                 <td style="width: 20%;">
                     <a class="btn btn-primary btn-sm" asp-page="./Details" asp-route-id="@factura.Id">Detalle</a>
-                    <a class="btn btn-warning btn-sm" asp-page="./Edit" asp-route-id="@factura.Id">Editar</a>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <a class="btn btn-warning btn-sm" asp-page="./Edit" asp-route-id="@factura.Id">Editar</a>
+                    }
                 </td>
             </tr>
         }

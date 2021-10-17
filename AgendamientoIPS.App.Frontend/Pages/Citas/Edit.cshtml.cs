@@ -6,9 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using AgendamientoIPS.App.Persistencia;
 using AgendamientoIPS.App.Dominio;
+using Microsoft.AspNetCore.Authorization;
 
 namespace AgendamientoIPS.App.Frontend.Pages.Citas
 {
+    [Authorize] 
     public class EditModel : PageModel
     {
         private readonly IRepositorioCita _repoCita;
