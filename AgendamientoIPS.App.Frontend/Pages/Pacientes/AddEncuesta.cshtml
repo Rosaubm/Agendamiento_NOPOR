@@ -2,7 +2,7 @@
 @model AgendamientoIPS.App.FrontEnd.Pages.Pacientes.AddEncuestaModel
 @{
 }
-<h1>Asignar Encuesta</h1>
+<h1>Asignar Encuesta a Paciente</h1>
 <form method="post">
     <div class="form-group">
         <label for="idPaciente">Paciente</label>
@@ -13,10 +13,11 @@
         <select name="idEncuesta" id="idEncuesta" class="form-control">
             @foreach (var encuesta in Model.encuestas)
             {
-                <option value="@encuesta.Id">@encuesta.Observaciones</option>   
+                <option value="@encuesta.Id">@encuesta.AntecedentesMedicos</option>   
             }
         </select>
     </div>
-    <button type="submit" class="btn btn-primary">Asignar Encuesta</button>
+    <button type="submit" class="btn btn-success">Asignar Encuesta</button>
 </form>
+<br>
 <a class="btn btn-secondary" asp-page="./Index">Volver</a>

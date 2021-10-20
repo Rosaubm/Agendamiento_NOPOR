@@ -7,7 +7,12 @@
 <table style="width: 100%;">
     <tr style="width: 100%;">
         <td style="width: 80%;"><h1>Listado de Citas</h1></td>
-        <td style="width: 20%;" text-align="right";><a class="btn btn-success" asp-page="./Create">Nueva Cita</a></td>
+        <td style="width: 20%;" text-align="right";>
+            @if (User.Identity.IsAuthenticated)
+            {
+                <a class="btn btn-success" asp-page="./Create">Nueva Cita</a>
+            }    
+        </td>
     </tr>
 </table>
 
@@ -17,8 +22,8 @@
             <th scope="col">Número de Cita</th>
             <th scope="col">Tipo de Cita</th>
             <th scope="col">Especialidad</th>
-            <th scope="col">Médico</th>
-            <th scope="col">Paciente</th>
+            <!--<th scope="col">Médico</th>
+            <th scope="col">Paciente</th>-->
             <th style="width: 20%;" scope="col">Acciones</th>
         </tr>
     </thead>
@@ -29,11 +34,14 @@
                 <td>@cita.NumCita</td>
                 <td>@cita.TipoCita</td>
                 <td>@cita.Especialidad</td>
-                <td>@cita.IdMedico</td>
-                <td>@cita.IdPaciente</td>
+                <!--<td>@cita.IdMedico</td>
+                <td>@cita.IdPaciente</td>-->
                 <td style="width: 20%;">
                     <a class="btn btn-primary btn-sm" asp-page="./Details" asp-route-id="@cita.Id">Detalle</a>
-                    <a class="btn btn-warning btn-sm" asp-page="./Edit" asp-route-id="@cita.Id">Editar</a>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <a class="btn btn-warning btn-sm" asp-page="./Edit" asp-route-id="@cita.Id">Editar</a>
+                    }
                 </td>
             </tr>
         }

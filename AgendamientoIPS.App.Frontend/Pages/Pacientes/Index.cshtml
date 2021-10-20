@@ -8,10 +8,34 @@
 <table style="width: 100%;">
     <tr style="width: 100%;">
         <td style="width: 80%;"><h1>Listado de Pacientes</h1></td>
-        <td style="width: 20%;" text-align="right";><a class="btn btn-success" asp-page="./Create">Nuevo Paciente</a></td>
+        <td style="width: 20%;" text-align="right";>
+            @if (User.Identity.IsAuthenticated)
+            {
+                <a class="btn btn-success" asp-page="./Create">Nuevo Paciente</a>
+            }
+        </td>
     </tr>
 </table>
-
+<br>
+<form method="get" classs="form-inline">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <label for="g"><h4>Seleccionar por EPS</h4></label>
+                <select class="custom-select" id="g" name="g" asp-items="Html.GetEnumSelectList<EPS>()" class="form-control" asp-for="@Model.gActual">
+                <option value="-1">Ver todos</option> 
+                </select>
+                <button type="submit" class="btn btn-primary my-1">Filtrar</button>
+            </div>        
+            <div class="col">
+                <label for = "b"><h4>Buscar por Nombre</h4></label>
+                <input type="text" class = "form-control" id = "b" name = "b" placeholder = "Texto de búsqueda..." asp-for = "@Model.bActual">
+                <button type="submit" class = "btn btn-primary my-1">Buscar</button>
+            </div>
+        </div>
+    </div>
+</form> 
+<br>
 <table class="table table-hover">
     <thead>
         <tr>
@@ -32,7 +56,10 @@
                 <td>@paciente.Telefono</td>
                 <td style="width: 20%;">
                     <a class="btn btn-primary btn-sm" asp-page="./Details" asp-route-id="@paciente.Id">Detalle</a>
-                    <a class="btn btn-warning btn-sm" asp-page="./Edit" asp-route-id="@paciente.Id">Editar</a>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <a class="btn btn-warning btn-sm" asp-page="./Edit" asp-route-id="@paciente.Id">Editar</a>
+                    }
                 </td>
             </tr>
         }

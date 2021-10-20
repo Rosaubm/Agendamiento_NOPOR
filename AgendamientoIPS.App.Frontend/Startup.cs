@@ -31,7 +31,8 @@ namespace AgendamientoIPS.App.Frontend
             services.AddSingleton<IRepositorioFactura, RepositorioFactura>();
             services.AddSingleton<IRepositorioSede, RepositorioSede>();            
             services.AddSingleton<IRepositorioConvenio, RepositorioConvenio>();   
-            services.AddSingleton<IRepositorioEncuesta, RepositorioEncuesta>();   
+            services.AddSingleton<IRepositorioEncuesta, RepositorioEncuesta>();
+            services.AddControllersWithViews();   
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -49,9 +50,12 @@ namespace AgendamientoIPS.App.Frontend
             }
 
             app.UseHttpsRedirection();
+
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 
